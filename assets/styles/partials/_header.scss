@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+.header{
+  display: block;
+  background-color: $brand-color;
+  color: #fff;
+  height: auto;
+  @extend .cf;
+  position: relative;
+
+  &__inner{
+    position: relative;
+    height: 550px;
+    z-index: 1;
+  }
+
+  &__jumbotron{
+    width: 850px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @extend .cf;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent url('assets/images/header-bg.jpg') top center no-repeat;
+    background-size: cover;
+    opacity: .2;
+  }
+}
+
+  .site-name{
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin: 0;
+    margin-bottom: .3em;
+    padding: 0;
+    text-align: center;
+  }
+
+  .site-desc{
+    font-family: $body-font-family !important;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 1.68;
+    margin: 0;
+    margin-bottom: 2em;
+  }

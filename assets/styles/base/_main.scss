@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+
+@if $global-border-box == true{
+  *, *:before, *:after{
+    box-sizing: border-box;
+  }
+}
+
+html{
+  font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
+  overflow-y:scroll;
+  min-height:100%;
+  color: $base-ui-color;
+}

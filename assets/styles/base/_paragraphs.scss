@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    $PARAGRAPHS
+\*------------------------------------*/
+
+.lead{
+  font-size: 1.4em;
+  margin-bottom: 2em;
+}
+
+p{
+  font-family: $body-font-family;
+  font-size: 1.2em;
+  line-height: 1.68;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+}
+
+strong{
+  font-weight: 600;
+}
+
+em, i{
+  font-style: italic;
+}
+
+blockquote{
+  background-color: #f9f9f9;
+  padding: 1em 2em;
+  border-left: 5px solid $brand-color;
+}

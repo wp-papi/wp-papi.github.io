@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+a{
+  color: $brand-color;
+  text-decoration: none;
+
+  &:hover{
+    color: $base-ui-color;
+  }
+}

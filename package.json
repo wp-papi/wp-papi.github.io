@@ -1,0 +1,31 @@
+{
+  "name": "ptb-site",
+  "title": "WordPress Page Type Builder",
+  "url": "wp-ptb.github.io",
+  "version": "0.0.1",
+  "description": "Site for Page Type Builder",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wp-ptb/site.git"
+  },
+  "author": "Johnie Hjelm <johnie@hjelm.im>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wp-ptb/site/issues"
+  },
+  "homepage": "https://github.com/wp-ptb/site",
+  "devDependencies": {
+    "browser-sync": "^1.1.2",
+    "gulp": "^3.8.5",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-header": "^1.0.5",
+    "gulp-imagemin": "^0.6.2",
+    "gulp-plumber": "^0.6.4",
+    "gulp-sass": "^0.7.2"
+  }
+}

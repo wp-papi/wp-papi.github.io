@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/**
+ * When we define a heading we also define a corresponding class to go with it.
+ * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
+ * heading hierarchy.
+ */
+
+h1,.alpha{
+    @include font-size($h1-size);
+}
+h2,.beta{
+    @include font-size($h2-size);
+    margin-top: 2em;
+}
+h3,.gamma{
+    @include font-size($h3-size);
+    margin-top: 2em;
+}
+h4,.delta{
+    @include font-size($h4-size);
+    margin-top: 2em;
+}
+h5,.epsilon{
+    @include font-size($h5-size);
+    margin-top: 2em;
+}
+h6,.zeta{
+    @include font-size($h6-size);
+    margin-top: 2em;
+}
+
+
+/**
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+.giga{
+    @include font-size($giga-size);
+}
+.mega{
+    @include font-size($mega-size);
+}
+.kilo{
+    @include font-size($kilo-size);
+}

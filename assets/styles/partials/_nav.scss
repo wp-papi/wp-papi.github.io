@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    $ NAVIGATION
+\*------------------------------------*/
+
+.nav{
+  list-style:none;
+  margin-left:0;
+  font-family: $base-font-family;
+  @extend .cf;
+
+  > li{
+
+    &,
+    > a{
+      display:inline-block;
+     *display:inline;
+      zoom:1;
+    }
+  }
+}
+
+
+/**
+ * `.nav--stacked` extends `.nav` and throws the list into vertical mode.
+ */
+.nav--stacked{
+  > li{
+    display:list-item;
+
+    > a{
+      display:block;
+    }
+  }
+}
+
+
+
+/**
+ * `.nav--banner` extends `.nav` and centres the list.
+ */
+.nav--banner{
+    text-align:center;
+}
+
+
+/**
+ * Force a nav to occupy 100% of the available width of its parent.
+ */
+.nav--fit{
+    display:table;
+    width:100%;
+
+    > li{
+        display:table-cell;
+
+        > a{
+            display:block;
+        }
+    }
+}
+
+
+
+
+
+/**
+ * MODIFIERS
+ */
+
+.navigation{
+  text-transform: uppercase;
+  @extend .cf;
+
+  &__inner{
+    background-color: $base-ui-color;
+    border-radius: 0 0 4px 4px;
+    height: 60px;
+  }
+
+  ul{
+    margin: 0;
+
+    li{
+      position: relative;
+      line-height: 60px;
+
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
