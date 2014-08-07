@@ -28,10 +28,37 @@ permalink: /styleguide/
 
 <h3>Header Level 3</h3>
 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil deserunt, similique. Perferendis quod adipisci quos pariatur atque quae, ducimus sint, repellat, itaque aperiam consequuntur enim voluptates dolorum minima alias iure.</p>
+
+<hgroup class="section-title">
+  <span>Section Title</span>
+</hgroup>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sit nostrum facere voluptatum veniam nemo nobis velit id quod necessitatibus vitae, provident sed. Sit, quidem, minima. Error sit voluptas accusantium incidunt ullam quo iusto vel in fuga et hic non, ipsa ipsam quis fugiat, cum molestiae, voluptatum officiis ipsum atque. Eos voluptates, perferendis, commodi veritatis nobis alias eaque autem quae nam. Adipisci, similique. Ea reprehenderit laboriosam voluptatem non commodi fugiat, fuga repellat optio, ab aspernatur dolor mollitia est consectetur sapiente molestias totam architecto quo quam incidunt porro minima provident tempore. Officiis temporibus nostrum ex aspernatur, accusamus, ab tempora explicabo voluptas.</p>
+
 <ul>
    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
    <li>Aliquam tincidunt mauris eu risus.</li>
 </ul>
+
+<h3>Buttons</h3>
+
+<div class="grid">
+  <div class="grid__item one-quarter">
+    <a href="#" class="btn btn--medium btn--full btn--primary">Button Primary</a>
+  </div>
+  <div class="grid__item one-quarter">
+    <a href="#" class="btn btn--medium btn--full btn--secondary">Button Secondary</a>
+  </div>
+  <div class="grid__item one-quarter">
+    <a href="#" class="btn btn--medium btn--full btn--tertiary">Button tertiary</a>
+  </div>
+  <div class="grid__item one-quarter">
+    <a href="#" class="btn btn--medium btn--full btn--quaternary">Button quaternary</a>
+  </div>
+</div>
+
+<h3>Code</h3>
 
 <pre><span class="code-selector">#header h1 a</span> {
   <span class="code-param">display</span>: <span class="code-value">block</span>;
@@ -40,44 +67,72 @@ permalink: /styleguide/
 }
 </pre>
 
-<h4>Forms</h4>
-<form action="#" method="post">
-    <div>
-         <label for="name">Text Input:</label>
-         <input type="text" name="name" id="name" value="" tabindex="1" />
+  <form action="#" method="post">
+    <div class="grid">
+      <div class="grid__item one-whole">
+        <h3>Forms</h3>
+      </div>
+      <div class="grid__item one-quarter">
+        <label class="input">
+          <input type="text" name="" id="" class="one-whole" placeholder="Name">
+        </label>
+      </div>
+      <div class="grid__item one-quarter">
+        <label class="input">
+          <input type="text" name="" id="" class="one-whole" placeholder="Email">
+        </label>
+      </div>
+      <div class="grid__item one-quarter">
+        <label class="input">
+          <input type="text" name="" id="" class="one-whole" placeholder="Phone">
+        </label>
+      </div>
+      <div class="grid__item one-quarter">
+        <label class="input">
+          <input type="text" name="" id="" class="one-whole" placeholder="Twitter">
+        </label>
+      </div>
+
+      <div style="padding-top: 20px;padding-bottom: 20px;" class="grid__item one-whole">
+        <label class="control radio">
+          <input type="radio" id="radio1" name="radio">
+          <span class="control-indicator"></span>
+          Toggle this custom radio
+        </label>
+        <label class="control radio">
+          <input type="radio" id="radio2" name="radio">
+          <span class="control-indicator"></span>
+          Or toggle this other custom radio
+        </label>
+      </div>
+
+      <div class="grid__item one-whole">
+        <label class="control checkbox">
+          <input type="checkbox">
+          <span class="control-indicator"></span>
+          Check this custom checkbox
+        </label>
+      </div>
+
+      <div style="padding-top: 20px;padding-bottom: 20px;" class="grid__item one-whole">
+        <label class="select">
+          <select>
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="grid__item one-whole">
+        <textarea rows="8" name="textarea" id="textarea" class="textarea" placeholder="Peekaboo!"></textarea>
+      </div>
+
+      <div style="padding-top: 20px;" class="grid__item one-whole">
+        <button class="btn btn--small btn--primary btn--soft">Submit</button>
+      </div>
+
     </div>
-
-    <div>
-         <h4>Radio Button Choice</h4>
-
-         <label for="radio-choice-1">Choice 1</label>
-         <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
-
-     <label for="radio-choice-2">Choice 2</label>
-         <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
-    </div>
-
-  <div>
-    <label for="select-choice">Select Dropdown Choice:</label>
-    <select name="select-choice" id="select-choice">
-      <option value="Choice 1">Choice 1</option>
-      <option value="Choice 2">Choice 2</option>
-      <option value="Choice 3">Choice 3</option>
-    </select>
-  </div>
-
-  <div>
-    <label for="textarea">Textarea:</label>
-    <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-  </div>
-
-  <div>
-      <label for="checkbox">Checkbox:</label>
-    <input type="checkbox" name="checkbox" id="checkbox" />
-    </div>
-
-  <div>
-      <input type="submit" value="Submit" />
-    </div>
-</form>
+  </form>
 </div>
