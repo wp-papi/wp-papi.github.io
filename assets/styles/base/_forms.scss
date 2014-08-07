@@ -10,7 +10,7 @@
 }
 
 .input input{
-  background-color: #eee;
+  background-color: $base-ui-color--light;
   color: $base-ui-color;
   border: none;
   border-radius: 4px;
@@ -28,7 +28,7 @@
 
 .textarea{
   width: 100%;
-  background-color: #eee;
+  background-color: $base-ui-color--light;
   resize: vertical;
   padding: 1em 1.5em;
   font-size: 20px;
@@ -139,7 +139,7 @@
   padding: .5rem 2.25rem .5rem 1rem;
   line-height: 1.5;
   color: #555;
-  background-color: #eee;
+  background-color: $base-ui-color--light;
   border: 0;
   border-radius: .25rem;
   cursor: pointer;
@@ -226,12 +226,12 @@
     content: "";
     display: block;
     width: 1.5rem;
-    background-color: #eee;
+    background-color: $base-ui-color--light;
   }
   .select select:hover,
   .select select:focus,
   .select select:active {
     color: #555;
-    background-color: #eee;
+    background-color: $base-ui-color--light;
   }
 }

@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+
+.footer{
+  background-color: $base-ui-color--light;
+  border-top: 5px solid #ddd;
+  height: auto;
+  @extend .cf;
+
+  &__inner{
+    min-height: 150px;
+    padding: 1em 0 2em;
+  }
+
+  &__nav{
+    position: relative;
+    @extend .cf;
+
+    ul{
+      padding-left: 65px;
+    }
+
+    li{
+      padding: 0px 1em;
+    }
+
+    a{
+      font-weight: 600;
+      color: $base-ui-color;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+
+      &:hover{
+        color: $brand-color;
+      }
+    }
+
+    &-logo{
+      width: 50px;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+.copyright{
+  font-style: normal;
+  color: #aaa;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
