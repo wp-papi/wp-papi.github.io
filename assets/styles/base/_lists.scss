@@ -7,4 +7,8 @@ ul, ol{
   font-family: $body-font-family;
   font-weight: 300;
   margin-bottom: 2em;
+
+  @include media-query(palm) {
+    font-size: 1em;
+  };
 }

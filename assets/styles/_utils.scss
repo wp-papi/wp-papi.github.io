@@ -57,3 +57,12 @@ $micro-size:        10px!default;
 // GRIDS
 $container-width: 1100px!default;
 $base-spacing-unit: 24px!default;
+
+
+// RESPONSIVE WIDTHS
+
+$is-responsive: true!default; // Set to false if you want to remove responsiveness
+
+$lap-start:         481px!default;
+$desk-start:        1024px!default;
+$desk-wide-start:   1200px!default;

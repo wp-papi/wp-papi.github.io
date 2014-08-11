@@ -6,7 +6,11 @@
  * Grid Container
  */
 .container{
-  width: $container-width;
+  @if $is-responsive == true{
+    max-width: $container-width;
+  } @else {
+    width: $container-width;
+  }
   margin: 0 auto;
 }
 
@@ -41,4 +45,10 @@
         @if $global-border-box == false{
             @include vendor(box-sizing, border-box);
         }
+
+        @include media-query(palm) {
+          display: block;
+          width: 100% !important;
+          margin-bottom: 5px;
+        };
     }

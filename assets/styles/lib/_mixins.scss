@@ -31,3 +31,66 @@
         line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
     }
 }
+
+
+
+/**
+ * Media query mixin.
+ *
+ * We define some broad breakpoints in our vars file that are picked up here
+ * for use in a simple media query mixin. Our options are:
+ *
+ * palm
+ * lap
+ * lap-and-up
+ * portable
+ * desk
+ * desk-wide
+ *
+ * Not using a media query will, naturally, serve styles to all devices.
+ *
+ * `@include media-query(palm){ [styles here] }`
+ *
+ */
+$palm-end:              $lap-start - 1px;
+$lap-end:               $desk-start - 1px;
+
+@mixin media-query($media-query){
+
+    @if $media-query == palm{
+
+        @media only screen and (max-width:$palm-end) { @content; }
+
+    }
+
+    @if $media-query == lap{
+
+        @media only screen and (min-width:$lap-start) and (max-width:$lap-end) { @content; }
+
+    }
+
+    @if $media-query == lap-and-up{
+
+        @media only screen and (min-width:$lap-start) { @content; }
+
+    }
+
+    @if $media-query == portable{
+
+        @media only screen and (max-width:$lap-end) { @content; }
+
+    }
+
+    @if $media-query == desk{
+
+        @media only screen and (min-width:$desk-start) { @content; }
+
+    }
+
+    @if $media-query == desk-wide{
+
+        @media only screen and (min-width: $desk-wide-start) { @content; }
+
+    }
+
+}

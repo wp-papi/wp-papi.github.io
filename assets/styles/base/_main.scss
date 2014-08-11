@@ -16,5 +16,9 @@ html{
 }
 
 .main{
-  padding: 4em 0;
+  padding: 4em 10px;
+
+  @include media-query(palm) {
+    padding: 1em 10px;
+  };
 }

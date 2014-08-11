@@ -9,14 +9,26 @@
 
 h1,.alpha{
     @include font-size($h1-size);
+
+    @include media-query(palm) {
+      font-size: 2.5em;
+    };
 }
 h2,.beta{
     @include font-size($h2-size);
     margin-top: 2em;
+
+    @include media-query(palm) {
+      font-size: 1.8em;
+    };
 }
 h3,.gamma{
     @include font-size($h3-size);
     margin-top: 2em;
+
+    @include media-query(palm) {
+      font-size: 1.6em;
+    };
 }
 h4,.delta{
     @include font-size($h4-size);

@@ -11,6 +11,9 @@ var gulp        = require("gulp"),
     header      = require("gulp-header"),
     imagemin    = require("gulp-imagemin"),
     cssmin      = require("gulp-cssmin"),
+    concat      = require("gulp-concat"),
+    uglify      = require('gulp-uglify'),
+    clean       = require('gulp-clean'),
     pkg         = require("./package.json");
 
 
@@ -62,6 +65,32 @@ gulp.task('sass', function() {
     .pipe(cssmin())
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest(paths.dist.css));
+});
+
+
+/**
+ * JS TASK
+ */
+gulp.task('js', function() {
+  gulp.src([
+    paths.src.js
+  ])
+  .pipe(plumber())
+  .pipe(concat('main.min.js'))
+  .pipe(uglify())
+  .pipe(header(banner, {
+    package: pkg
+  }))
+  .pipe(gulp.dest(paths.dist.js))
+  .pipe(browserSync.reload({stream:true}));
+});
+
+// Cleanjs
+gulp.task('cleanjs', function() {
+  return gulp.src('./assets/js/views/*.js', {
+      force: true
+    })
+    .pipe(clean());
 });
 
 
@@ -119,6 +148,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  */
 gulp.task('watch', function () {
     gulp.watch(paths.src.sassAll, ['sass']);
+    gulp.watch(paths.src.js, ['js'], ['cleanjs', 'js']);
     gulp.watch(['_config.yml', './**/*.html', 'index.html', '_layouts/*.html', '_posts/*', '_includes/*', 'assets/images/*'], ['jekyll-rebuild']);
 });
 
