@@ -22,3 +22,27 @@ html{
     padding: 1em 10px;
   };
 }
+
+
+.section{
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+
+  &:last-of-type{
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+
+.credit{
+  padding-top: 2em;
+  text-align: center;
+  font-size: 1.5em;
+
+  @include media-query(palm) {
+    font-size: 1em;
+    padding-top: 0em;
+  }
+}

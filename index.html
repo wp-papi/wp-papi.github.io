@@ -3,5 +3,25 @@ layout: default
 ---
 
 <div class="home">
+  <div class="container">
+    {% for section in site.data.start.sections %}
 
+      <div class="section">
+        <h2 class="section-title">{{ section.title }}</h2>
+
+        {% if section.content %}
+          <p>{{ section.content }}</p>
+        {% endif %}
+
+        {% if section.code %}
+          {% highlight php linenos %}{{ section.code }}{% endhighlight %}
+        {% endif %}
+      </div>
+
+    {% endfor %}
+
+    <div class="credit">
+      <p>{{ site.data.credit.text }}</p>
+    </div>
+  </div>
 </div>

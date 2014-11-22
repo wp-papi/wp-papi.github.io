@@ -2,15 +2,6 @@
     $CODE
 \*------------------------------------*/
 
-pre{
-  display: block;
-  background-color: $base-ui-color;
-  color: #fff;
-  padding: 2em;
-  border-radius: 4px;
-  overflow-x: scroll;
-}
-
 .code-selector{
   color: #D4233E;
 }
@@ -25,7 +16,7 @@ pre{
 
 
 // Inline code
-code{
+p code{
   background-color: #f0f0f0;
   padding: 0 5px;
   border-radius: 3px;

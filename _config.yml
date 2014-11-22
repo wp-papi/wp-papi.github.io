@@ -1,8 +1,8 @@
 # Site settings
-title: WP Page Type Builder
-abbr: WP-PTB
+title: Page Type API
+abbr: wp-papi
 email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "wp-papi for WordPress allows you create page types using the existing page post type or using custom post types. For those how have work with Page Types in EPiServer will recognize themselves."
 baseurl: ""
 url: "http://wp-ptb.github.io"
 

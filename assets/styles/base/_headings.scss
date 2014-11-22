@@ -64,56 +64,15 @@ h6,.zeta{
  * Section headers
  */
 .section-title{
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   position: relative;
-  transform-style: preserve-3d;
-  color: #fff;
+  color: $base-ui-color;
   text-transform: uppercase;
+  font-size: 1.6em;
   @extend .cf;
-  padding: 2em 0;
 
-  &:before{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    background-color: #ddd;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  span{
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #181F27;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 2px;
-
-    &:before, &:after{
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      position: absolute;
-      top: 0;
-      border-width: 20px;
-      border-color: transparent;
-      border-style: solid;
-    }
-
-    &:before{
-      left: -39px;
-      border-right-color: #181F27;
-    }
-
-    &:after{
-      right: -39px;
-      border-left-color: #181F27;
-    }
+  @include media-query(palm) {
+    font-size: 1.2em;
   }
 }

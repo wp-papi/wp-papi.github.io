@@ -10,57 +10,15 @@
 
   &__inner{
     min-height: 150px;
-    padding: 1em 0 2em;
+    padding: 2em 0;
   }
 
-  &__nav{
-    position: relative;
-    @extend .cf;
-
-    ul{
-      padding-left: 65px;
-    }
-
-    li{
-      padding: 0px 1em;
-    }
-
-    a{
-      font-weight: 600;
-      color: $base-ui-color;
-      text-transform: uppercase;
-      font-size: 14px;
-      letter-spacing: 1px;
-
-      &:hover{
-        color: $brand-color;
-      }
-    }
-
-    &-logo{
-      width: 50px;
-      height: auto;
-      vertical-align: middle;
-    }
-
-    @include media-query(palm) {
-      ul{
-        padding-left: 0;
-        margin: 0;
-        margin-bottom: 1em;
-      }
-
-      li{
-        display: block;
-        width: 100%;
-        padding: 0;
-        line-height: 30px;
-      }
-
-      &-logo{
-        display: none;
-      }
-    };
+  &__nav-logo{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    margin-bottom: 1em;
+    height: auto;
   }
 }
 
