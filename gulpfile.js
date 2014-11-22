@@ -3,6 +3,7 @@
  */
 
 var gulp        = require("gulp"),
+    size        = require("gulp-size")
     sass        = require("gulp-sass")
     browserSync = require("browser-sync")
     cp          = require('child_process'),
@@ -143,13 +144,22 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 
 /**
+ * Size of project
+ */
+gulp.task('size', function () {
+  return gulp.src('_site/**')
+          .pipe(size());
+});
+
+
+/**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch(paths.src.sassAll, ['sass']);
     gulp.watch(paths.src.js, ['js'], ['cleanjs', 'js']);
-    gulp.watch(['_config.yml', './**/*.html', 'index.html', '_layouts/*.html', '_posts/*', '_includes/*', 'assets/images/*'], ['jekyll-rebuild']);
+    gulp.watch(['!node_modules/', '!_site/node_modules/', '_config.yml', './**/*.html', 'index.html', '_layouts/*.html', '_posts/*', '_includes/*', 'assets/images/*'], ['jekyll-rebuild']);
 });
 
 /**

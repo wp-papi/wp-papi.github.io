@@ -9,3 +9,6 @@ url: "http://wp-ptb.github.io"
 # Build settings
 markdown: kramdown
 permalink: /:title
+
+# Exclude
+exclude: ['node_modules/']
