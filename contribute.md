@@ -32,39 +32,39 @@ Good pull requests—patches, improvements, new features—are are allways welco
 
 1. Fork [wp-papi/papi](https://github.com/wp-papi/papi) on Github and add the upstream remote.
 
-{% highlight python %}
+{% highlight mysql %}
 
-git clone https://github.com/<your-username>/papi.git
+$ git clone https://github.com/<your-username>/papi.git
 
-cd papi
+$ cd papi
 
-git remote add upstream https://github.com/wp-papi/papi.git
+$ git remote add upstream https://github.com/wp-papi/papi.git
 
 {% endhighlight %}
 
 This is useful if you cloned your repo a while ago and want's to updated it.
 
-{% highlight python %}
+{% highlight mysql %}
 
-git checkout master
-git pull upstream master
+$ git checkout master
+$ git pull upstream master
 
 {% endhighlight %}
 
 2. Create a new branch:
 
-{% highlight python %}
+{% highlight mysql %}
 
-git checkout -b <my_branch>.
+$ git checkout -b <my_branch>.
 
 {% endhighlight %}
 
 3. Commit your changes to your fork.
 4. Push to your branch:
 
-{% highlight python %}
+{% highlight mysql %}
 
-git push origin <my_branch>
+$ git push origin <my_branch>
 
 {% endhighlight %}
 
