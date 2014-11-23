@@ -14,7 +14,7 @@ layout: default
         {% endif %}
 
         {% if section.code %}
-          {% highlight php linenos %}{{ section.code }}{% endhighlight %}
+          <script src="{{ section.code | append: '.js' }}"></script>
         {% endif %}
       </div>
 
