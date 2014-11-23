@@ -32,33 +32,42 @@ Good pull requests—patches, improvements, new features—are are allways welco
 
 1. Fork [wp-papi/papi](https://github.com/wp-papi/papi) on Github and add the upstream remote.
 
-  ```
-  git clone https://github.com/<your-username>/papi.git
+{% highlight python %}
 
-  cd papi
+git clone https://github.com/<your-username>/papi.git
 
-  git remote add upstream https://github.com/wp-papi/papi.git
-  ```
+cd papi
 
-  This is useful if you cloned your repo a while ago and want's to updated it.
+git remote add upstream https://github.com/wp-papi/papi.git
 
-  ```
-  git checkout master
-  git pull upstream master
-  ```
+{% endhighlight %}
+
+This is useful if you cloned your repo a while ago and want's to updated it.
+
+{% highlight python %}
+
+git checkout master
+git pull upstream master
+
+{% endhighlight %}
 
 2. Create a new branch:
 
-  ```
-  git checkout -b <my_branch>`.
-  ```
+{% highlight python %}
+
+git checkout -b <my_branch>.
+
+{% endhighlight %}
 
 3. Commit your changes to your fork.
 4. Push to your branch:
 
-  ```
-  git push origin <my_branch>
-  ```
+{% highlight python %}
+
+git push origin <my_branch>
+
+{% endhighlight %}
+
 
 5. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
 with a clear title and description against the `wip-*` branch.

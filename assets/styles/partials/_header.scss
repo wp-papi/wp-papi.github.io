@@ -12,11 +12,15 @@
 
   &__inner{
     position: relative;
-    height: 550px;
     z-index: 1;
-    @include media-query(palm) {
-      height: 400px;
-    };
+
+    &.front{
+      height: 550px;
+
+      @include media-query(palm) {
+        height: 400px;
+      };
+    }
   }
 
   &__jumbotron{
