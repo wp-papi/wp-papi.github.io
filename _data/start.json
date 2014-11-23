@@ -6,11 +6,11 @@
     },
     {
       "title": "Who is this for?",
-      "content": "Papi is for the developer that would like to work with page types in WordPress but is using custom post types to solve the problem."
+      "content": "Papi is for the developer that would like to work with page types in WordPress but is using custom post types to solve the problem. Custom post type can't be added anywhere in the url structure, with a page type it can! You can add a custom page type with custom fields anywhere in the url structure just by selecting the right page type to create."
     },
     {
       "title": "What does the code look like?",
-      "content": "First you need to register your page type, example:",
+      "content": "First you need to register your page type:",
       "code": "https://gist.github.com/frozzare/facb668d08dc13b12b80"
     },
     {
