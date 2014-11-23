@@ -2,7 +2,7 @@
 title: Page Type API
 abbr: wp-papi
 email: fredrik.forsmo@gmail.com
-description: "Papi has a different approach on how to work with fields and page types in WordPress. The idea is coming from how Page Type Builder in EPiServer works and has been loved by the developers."
+description: "Papi has a different approach on how to work with fields and page types in WordPress."
 baseurl: ""
 url: "http://wp-ptb.github.io"
 

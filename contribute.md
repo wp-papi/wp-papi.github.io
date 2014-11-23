@@ -30,15 +30,15 @@ Good pull requests—patches, improvements, new features—are are allways welco
 
 **Please follow** the projects code style. The projects PHP code should be following the [WordPress code standard](https://make.wordpress.org/core/handbook/coding-standards/php/) and allways use brackets.
 
-1. Fork [wp-papi/papi](https://github.com/wp-papi/papi) on Github and add the upstream remote.
+* Fork [wp-papi/papi](https://github.com/wp-papi/papi) on Github and add the upstream remote.
 
 {% highlight mysql %}
 
-$ git clone https://github.com/<your-username>/papi.git
+git clone https://github.com/<your-username>/papi.git
 
-$ cd papi
+cd papi
 
-$ git remote add upstream https://github.com/wp-papi/papi.git
+git remote add upstream https://github.com/wp-papi/papi.git
 
 {% endhighlight %}
 
@@ -46,30 +46,30 @@ This is useful if you cloned your repo a while ago and want's to updated it.
 
 {% highlight mysql %}
 
-$ git checkout master
-$ git pull upstream master
+git checkout master
+git pull upstream master
 
 {% endhighlight %}
 
-2. Create a new branch:
+* Create a new branch:
 
 {% highlight mysql %}
 
-$ git checkout -b <my_branch>.
+git checkout -b <my_branch>.
 
 {% endhighlight %}
 
-3. Commit your changes to your fork.
-4. Push to your branch:
+* Commit your changes to your fork.
+* Push to your branch:
 
 {% highlight mysql %}
 
-$ git push origin <my_branch>
+git push origin <my_branch>
 
 {% endhighlight %}
 
 
-5. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
+* [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
 with a clear title and description against the `wip-*` branch.
 
 **Note:**
