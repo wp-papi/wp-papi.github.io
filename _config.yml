@@ -1,8 +1,8 @@
 # Site settings
 title: Page Type API
 abbr: wp-papi
-email: your-email@domain.com
-description: "wp-papi for WordPress allows you create page types using the existing page post type or using custom post types. For those how have work with Page Types in EPiServer will recognize themselves."
+email: fredrik.forsmo@gmail.com
+description: "Papi has a different approach on how to work with fields and page types in WordPress. The idea is coming from how Page Type Builder in EPiServer works and has been loved by the developers."
 baseurl: ""
 url: "http://wp-ptb.github.io"
 
