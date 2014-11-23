@@ -14,7 +14,8 @@
       "code": "https://gist.github.com/frozzare/facb668d08dc13b12b80"
     },
     {
-      "title": "Page type example:"
+      "title": "Page type example:",
+      "content": "This is a example of a page type that works with page post type. You can add which post type it will works, head over to the <a href=\"http://papi.readthedocs.org/en/latest/manual/page-types.html\">documentation</a> to read more. <img src='/assets/images/papi/add-new-page-type-view.png' /> <script src='https://gist.github.com/frozzare/bb6112dac2a76531f05e.js'></script> <img src='/assets/images/papi/start-page-example-page.png' />"
     },
     {
       "title": "What does it look like?",
