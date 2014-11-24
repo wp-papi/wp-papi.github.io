@@ -121,6 +121,10 @@
           color: #fff;
         }
 
+        &.active{
+          color: #fff;
+        }
+
         @include media-query(palm) {
           font-size: 14px;
           padding: 0px 0px;

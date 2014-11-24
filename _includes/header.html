@@ -1,13 +1,13 @@
 <header class="header" role="banner">
-  <div class="header__inner {% if page.start %}front{% endif %}">
+  <div class="header__inner {% if page.start %}{% else %}not-front{% endif %}">
     {% include main_navigation.html %}
 
-    {% if page.start %}
     <div class="header__jumbotron">
       <h1 class="site-name">{{ site.title }}</h1>
       <h2 class="site-desc">{{ site.description }}</h2>
-      <a href="#main" class="btn btn--medium btn--quaternary btn--soft">Get started</a>
+      {% if page.start %}
+        <a href="#main" class="btn btn--medium btn--quaternary btn--soft">Get started</a>
+      {% endif %}
     </div>
-    {% endif %}
   </div><!-- /.header__inner -->
 </header><!-- /.header -->

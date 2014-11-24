@@ -2,6 +2,7 @@
 layout: page
 title: Contribute
 permalink: /contribute/
+id: contribute
 ---
 
 Everyone is welcome to contribute with patches, bug-fixes and new features.

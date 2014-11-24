@@ -13,12 +13,17 @@
   &__inner{
     position: relative;
     z-index: 1;
+    height: 550px;
 
-    &.front{
-      height: 550px;
+    @include media-query(palm) {
+      height: 400px;
+    };
+
+    &.not-front{
+      height: 330px;
 
       @include media-query(palm) {
-        height: 400px;
+        height: 250px;
       };
     }
   }
@@ -77,6 +82,10 @@
     line-height: 1.68;
     margin: 0;
     margin-bottom: 2em;
+
+    .not-front & {
+      margin-bottom: 0;
+    }
 
     @include media-query(palm) {
       font-size: 1.2em;
