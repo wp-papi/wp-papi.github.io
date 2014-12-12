@@ -1,4 +1,4 @@
 site
 ====
 
-[WIP] - Landning site for Page Type Builder
+Landning site for Page Type API
