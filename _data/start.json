@@ -7,7 +7,7 @@
         "content": "Papi works on WordPress 3.8 (3.9 if HHVM) and PHP 5.3 and above. Not tested on lower versions. <br /> <a href='https://travis-ci.org/wp-papi/papi' title='Travis testes'><img src='https://travis-ci.org/wp-papi/papi.svg?branch=master' style='max-width:90px'></a>"
     }, {
         "title": "Installation",
-        "content": "If you're using Composer to manage WordPress, add Papi to your project's dependencies. Run: <br /> <div class='highlight'><pre><code><span class='n'>composer require wp-papi/papi 1.0.1</span></code></pre></div> Or manually add it to your <pre>composer.json</pre> <script src='https://gist.github.com/frozzare/8ab84834cb6da0c96954.js'></script>"
+        "content": "If you're using Composer to manage WordPress, add Papi to your project's dependencies. Run: <br /> <div class='highlight'><pre><code><span class='n'>composer require wp-papi/papi 1.0.2</span></code></pre></div> Or manually add it to your <pre>composer.json</pre> <script src='https://gist.github.com/frozzare/8ab84834cb6da0c96954.js'></script>"
     }, {
         "title": "What does the code look like?",
         "content": "This is a example of a page type that works with page post type. You can add which post type it will works, head over to the <a href=\"http://papi.readthedocs.org/en/latest/manual/page-types.html\">documentation</a> to read more. <script src='https://gist.github.com/frozzare/bb6112dac2a76531f05e.js'></script> <h5>Image example of the page type</h5> <img src='/assets/images/papi/start-page-example-page.png' />"
