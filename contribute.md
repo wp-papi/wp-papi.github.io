@@ -64,7 +64,7 @@ git checkout -b <topic-branch-name>
 * Commit your changes to your fork.
 * Locally merge (or rebase) the upstream development branch into your topic branch:
 
-{% higlight mysql %}
+{% highlight mysql %}
 
 git pull [--rebase] upstream master
 
