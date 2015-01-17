@@ -56,16 +56,25 @@ git pull upstream master
 
 {% highlight mysql %}
 
-git checkout -b <my_branch>.
+git checkout -b <topic-branch-name>
 
 {% endhighlight %}
 
+* Make sure to update, or add to the tests when appropriate.
 * Commit your changes to your fork.
+* Locally merge (or rebase) the upstream development branch into your topic branch:
+
+{% higlight mysql %}
+
+git pull [--rebase] upstream master
+
+{% endhighlight %}
+
 * Push to your branch:
 
 {% highlight mysql %}
 
-git push origin <my_branch>
+git push origin <topic-branch-name>
 
 {% endhighlight %}
 
