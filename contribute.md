@@ -69,9 +69,7 @@ git push origin <my_branch>
 
 {% endhighlight %}
 
-
-* [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-with a clear title and description against the `*-dev` branch or `master` if it's a patch.
+* [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) with a clear title and description.
 
 **Note:**
 If you are making several changes at once please divide them into multiple pull requests.
