@@ -27,7 +27,7 @@ Try to be as detailed as possible in your bug issue so we can help you better wi
 
 Good pull requests—patches, improvements, new features—are are allways welcome. They should remain focused in scope and avoid containing unrelated commits.
 
-**Please ask first** before embarking on any significant pull request.
+**Please ask first** embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.
 
 **Please follow** the projects code style. The projects PHP code should be following the [WordPress code standard](https://make.wordpress.org/core/handbook/coding-standards/php/) and allways use brackets.
 
@@ -78,7 +78,7 @@ git push origin <topic-branch-name>
 
 {% endhighlight %}
 
-* [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) with a clear title and description.
+* [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) with a clear title and description against the `master` branch.
 
 **Note:**
 If you are making several changes at once please divide them into multiple pull requests.
