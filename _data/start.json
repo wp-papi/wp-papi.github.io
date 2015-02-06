@@ -16,7 +16,7 @@
         "content": "<img src='/assets/images/papi/add-new-page-type-view.png' />"
     }, {
         "title": "Timber",
-        "content": "<a href='http://upstatement.com/timber/'>Timber</a> is a wonderful plugin for work with Twig in WordPress themes. Papi has a integration class that you should use if you like to use Papi and Timber together. Go to the <a href='https://github.com/wp-papi/timber-integration'>GitHub repository</a>."
+        "content": "<a href='http://upstatement.com/timber/'>Timber</a> is a good plugin for work with Twig in WordPress themes. Papi has a integration class that you should use if you like to use Papi and Timber together. Go to the <a href='https://github.com/wp-papi/timber-integration'>GitHub repository</a>."
     }, {
         "title": "How do I proceed?",
         "content": "The best is to read the <a href='http://papi.readthedocs.org/en/latest/'>documentation</a>."
