@@ -16,6 +16,6 @@
         "content": "<img src='/assets/images/papi/add-new-page-type-view.png' />"
     }, {
         "title": "How do I proceed?",
-        "content": "The best is to read the <a href='http://papi.readthedocs.org/en/latest/'>documentation</a>."
+        "content": "The best is to read the <a href='/docs/'>documentation</a>."
     }]
 }
