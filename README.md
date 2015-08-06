@@ -1,4 +1,4 @@
 site
 ====
 
-Landning site for Page Type API
+Landning site for Papi.
