@@ -4,7 +4,7 @@
         "content": "Papi has a different approach on how to work with fields and page types in WordPress. The idea is coming from how Page Type Builder in EPiServer works and has been loved by the developers. <br /> <br /> So we thought, why not use the same approach in WordPress? Papi is running in production today and has been easy to work with when it came to adding new fields. Papi doesn’t have any admin user interface where you must add all fields. Instead we use classes in PHP, where one class represents one page type and in your class you add all fields you need. It’s that easy!"
     }, {
         "title": "WordPress and PHP versions",
-        "content": "Papi 2 works with WordPress 4.0 (3.8 for Papi 1) and PHP 5.4 (5.3 for Papi 1) and above. <br /> <a href='https://travis-ci.org/wp-papi/papi' title='Travis testes'><img src='https://travis-ci.org/wp-papi/papi.svg?branch=master' style='max-width:90px'></a>"
+        "content": "Papi 2 works with WordPress 4.0 and PHP 5.4 and above. <br /> <a href='https://travis-ci.org/wp-papi/papi' title='Travis testes'><img src='https://travis-ci.org/wp-papi/papi.svg?branch=master' style='max-width:90px'></a>"
     }, {
         "title": "Installation",
         "content": "If you're using Composer to manage WordPress, add Papi to your project's dependencies. Run: <br /> <div class='highlight'><pre><code><span class='n'>composer require wp-papi/papi</span></code></pre></div> Or manually add it to your <pre>composer.json</pre> <script src='https://gist.github.com/frozzare/8ab84834cb6da0c96954.js'></script>"
