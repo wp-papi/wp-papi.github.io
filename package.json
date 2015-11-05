@@ -19,17 +19,17 @@
   },
   "homepage": "https://github.com/wp-ptb/site",
   "devDependencies": {
-    "browser-sync": "^1.1.2",
-    "gulp": "^3.8.5",
-    "gulp-autoprefixer": "0.0.7",
+    "browser-sync": "^2.9.12",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "3.1.0",
     "gulp-clean": "^0.3.1",
-    "gulp-concat": "^2.3.4",
-    "gulp-cssmin": "^0.1.6",
-    "gulp-header": "^1.0.5",
-    "gulp-imagemin": "^0.6.2",
-    "gulp-plumber": "^0.6.4",
-    "gulp-sass": "^0.7.2",
-    "gulp-size": "^1.0.0",
-    "gulp-uglify": "^0.3.1"
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-header": "^1.7.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.0",
+    "gulp-size": "^2.0.0",
+    "gulp-uglify": "^1.4.2"
   }
 }
