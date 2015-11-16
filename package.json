@@ -1,23 +1,23 @@
 {
-  "name": "ptb-site",
-  "title": "WordPress Page Type Builder",
-  "url": "wp-ptb.github.io",
-  "version": "0.0.1",
-  "description": "Site for Page Type Builder",
+  "name": "papi-site",
+  "title": "Papi - WordPress Page Type API",
+  "url": "wp-papi.github.io",
+  "version": "1.0.0",
+  "description": "Site for Papi",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/wp-ptb/site.git"
+    "url": "git://github.com/wp-papi/wp-papi.github.io.git"
   },
   "author": "Johnie Hjelm <johnie@hjelm.im>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wp-ptb/site/issues"
+    "url": "https://github.com/wp-papi/wp-papi.github.io/issues"
   },
-  "homepage": "https://github.com/wp-ptb/site",
+  "homepage": "https://github.com/wp-papi/wp-papi.github.io",
   "devDependencies": {
     "browser-sync": "^2.9.12",
     "gulp": "^3.9.0",
