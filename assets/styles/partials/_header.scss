@@ -97,10 +97,11 @@
 
 
 /**
- * Fork me
+ * GitHub Corner
  */
-.github-corner{
-  @media (max-width: 700px) {
-    display: none;
+@media (max-width: 700px) {
+  .github-corner {
+    display: none !important;
+  }
   }
 }
