@@ -5,7 +5,7 @@ abbr: wp-papi
 email: fredrik.forsmo@gmail.com
 description: "Papi has a different approach on how to work with fields and page types in WordPress."
 baseurl: ""
-url: "http://wp-ptb.github.io"
+url: "http://wp-papi.github.io"
 
 # Build settings
 markdown: kramdown
