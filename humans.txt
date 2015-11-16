@@ -16,7 +16,7 @@ From: Stockholm, Sweden
  * SITE
  */
 
-Last update: 2014/11/24
+Last update: 2015/11/16
 Language: English
 Doctype: HTML5
-Technology: Jekyll, Github pages
+Technology: Jekyll, GitHub pages
