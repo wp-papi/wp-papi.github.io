@@ -30,7 +30,7 @@ article {
     .item {
       @include span-columns(6);
 
-      @media only screen and (max-width: 640px) {
+      @include media($medium-screen) {
         @include span-columns(12);
       }
 
