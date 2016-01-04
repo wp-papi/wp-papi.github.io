@@ -8,7 +8,7 @@ This guide will describe how to update Papi 2 to Papi 3.
 
 ### Meta method in page type classes
 
-In Papi 3 we remove `page_type` and `option_type`, this is because we would have one way to name the meta method instead of multiple. With string replace you can replace all your `page_type` and `option_type` with `meta` and you're page types should work with Papi 3.
+In Papi 3 we remove `page_type` and `option_type`, this is because we think that one name is better than multiple. With string replace you can replace all your `page_type` and `option_type` with `meta` and you're page types should work with Papi 3.
 
 ### Remove method in page type classes
 
