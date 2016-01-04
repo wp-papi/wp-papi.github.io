@@ -1,0 +1,15 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss: /atom.xml
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+
+# ./../bourbon-neat/app/assets/stylesheets/
+node_sass:
+  includePaths:
+#    - ./../bourbon-neat/app/assets/stylesheets/
