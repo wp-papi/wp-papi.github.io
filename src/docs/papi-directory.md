@@ -1,7 +1,7 @@
 ---
 title: Papi directory
 type: docs
-order: 2
+order: 3
 ---
 
 Papi does require a directory in your theme, plugin or somewhere in your WordPress site where your page types exists. You can add multiplied directories.
