@@ -1,0 +1,29 @@
+<div class="bg-white">
+  <div class="container">
+    <% if (page.type) { %>
+      <%- partial('partials/sidebar', { type: page.type, index: page.index }) %>
+    <% } %>
+    <section>
+      <article>
+        <h2><%- page.title %><%- page.type === 'examples' ? ' Example' : '' %></h2>
+        <%- page.content %>
+        <div class="footer">
+          Caught a mistake or want to contribute to the documentation?
+          <a href="https://github.com/wp-papi/wp-papi.github.io/blob/master/src/<%- page.path.replace(/\.html$/, '.md') %>" target="_blank">
+            Edit this page on Github!
+          </a>
+        </div>
+        <% if (page.type === 'docs') { %>
+          <div class="guide-links">
+            <% site.pages.find({ type: page.type, order: page.order - 1 }).each(function (page) { %>
+              <span>← <a href="<%- url_for(page.path) %>"><%- page.title %></a></span>
+            <% }) %>
+            <% site.pages.find({ type: page.type, order: page.order + 1 }).each(function (page) { %>
+              <span style="float:right"><a href="<%- url_for(page.path) %>"><%- page.title %></a> →</span>
+            <% }) %>
+          </div>
+        <% } %>
+      </article>
+    </section>
+  </div>
+</div>

@@ -2,22 +2,15 @@
 @import "../../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "../../../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
 
-@import "framework/nav";
 @import "framework/hero";
-
-body {
-}
-
-
-.grid {
-  display: block;
-  padding-left: 6%;
-  padding-right: 6%;
-  max-width: none;
-}
+@import "framework/nav";
+@import "framework/sections";
+@import "framework/sidebar";
+@import "framework/typography";
+@import "content/article";
+@import "content/credit";
 
 .hero {
   background: #3eb991;
   color: white;
 }
-
