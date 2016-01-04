@@ -2,15 +2,13 @@
 @import "../../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "../../../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
 
+$medium-screen: em(640) !default;
+
 @import "framework/hero";
+@import "framework/highlight";
 @import "framework/nav";
 @import "framework/sections";
 @import "framework/sidebar";
 @import "framework/typography";
 @import "content/article";
 @import "content/credit";
-
-.hero {
-  background: #3eb991;
-  color: white;
-}

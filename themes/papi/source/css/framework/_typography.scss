@@ -1,8 +1,56 @@
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
 a {
   color: #477DCA;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+h1, h2, h3, h4, strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+
+  @include media($medium-screen) {
+    font-size: 2.4em;
+  }
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 0.9em;
+
+  @include media($medium-screen) {
+    font-size: 1.4em;
+  }
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-bottom: 0.4em;
+}
+
+
+p {
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  word-spacing: 0.05em;
+
+  span {
+    font-size: 0.8em;
+    text-transform: uppercase;
   }
 }
