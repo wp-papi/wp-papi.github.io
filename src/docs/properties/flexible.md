@@ -7,7 +7,7 @@ type: properties
 <?php
 
 /**
- * Example of Flexible.
+ * Example of flexible.
  */
 
 papi_property( [

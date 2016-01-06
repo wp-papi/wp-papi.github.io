@@ -35,9 +35,9 @@ papi_property( [
 ] )
 ```
 
-Papi has many different core properties (a field is a property in the page type) to start with and you can easy create your own using our [Yeoman generator](https://github.com/wp-papi/generator-property). The are several keys that all properties have.
+Papi has many different core properties to start with and you can easy create your own using our [Yeoman generator](https://github.com/wp-papi/generator-property). The are several keys that all properties have.
 
-The property type is loaded from the page type file instead of saving it in the database.
+The property type is loaded from the type file instead of saving it in the database.
 
 Key          | Default      | Description
 -------------|--------------|---------------------------------------------------
@@ -64,4 +64,4 @@ title        | empty string | The title of the property. Can be empty for blank 
 type         | empty string | The property type (lower case is preferred to use)
 value        | empty string | The default value that are presented in the property
 
-Be sure to have different slug for each properties on a page type, the same slug will not work great and you will lose data if you are using same slug for multiple properties.
+Be sure to have different slug for each properties on a type, the same slug will not work great and you will lose data if you are using same slug for multiple properties.

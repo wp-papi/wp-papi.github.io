@@ -7,7 +7,7 @@ type: properties
 <?php
 
 /**
- * Example of select.
+ * Example of dropdown.
  */
 
 papi_property( [

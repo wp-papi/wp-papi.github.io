@@ -18,7 +18,6 @@ class Video_Page_Type extends Papi_Page_Type {
    *
    * @return array
    */
-
   public function meta() {
     return [
       'name'        => 'Video page',
@@ -26,7 +25,6 @@ class Video_Page_Type extends Papi_Page_Type {
       'template'    => 'pages/video-page.php'
     ];
   }
-
 }
 ```
 
@@ -34,18 +32,16 @@ class Video_Page_Type extends Papi_Page_Type {
 
 The `meta` is a required method of the page type class. It should return an array containing the required keys.
 
-**Since 2.4.0** the method is called `meta` the old `page_type` method will still work but is deprecated and not recommended to use.
-
 Options            | Required | Description
 -------------------|----------|------------
 name               | yes      | The name of the page type
-child_types        | no       | Array of page type that will be available when `parent_post` query string exists. The array values should be the page type id. **Since 2.3.0**
+child_types        | no       | Array of page type that will be available when `parent_post` query string exists. The array values should be the page type id.
 description        | no       | The description of the page type
 fill_labels        | no       | When this is true it will add the page type name to `add_new_item`, `edit_item` and `view_item` label. Both in WordPress admin and the admin bar on the front. You can override this with the `labels` array.
 labels             | no       | With this you can handle the `labels` object that exists on a [post type](http://codex.wordpress.org/Function_Reference/get_post_type_object). So this means that you can change "Add New Page" for every page type and have something like `Add New Startpage`. Just create a array with the `labels` keys and values on your page type meta array
 post_type          | no       | Array of post types that the page type should be registered on. Default is `page`
 sort_order         | no       | The sort order number of the page type
-standard_type      | no       | True or false if standard page type should be displayed on `Add New Page` when `parent_post` query string exists or when you want to hide standard page when a post type only has one page type, like `only_page_type` filter. **Since 2.3.0**
+standard_type      | no       | True or false if standard page type should be displayed on `Add New Page` when `parent_post` query string exists or when you want to hide standard page when a post type only has one page type, like `only_page_type` filter.
 template           | no       | The template file to render. This can be both dot templates `pages.article` or `pages/article.php`. Extension is not required. Dot templates and extension requirement does only exists in 2.3.0 and above.
 thumbnail          | no       | The thumbnail image that should appear on the add new page
 
@@ -108,7 +104,6 @@ Default value is `true`.
 /**
  * Example of `register` method.
  */
-
 public function register() {
   // A single metabox
   $this->remove( 'comments' );

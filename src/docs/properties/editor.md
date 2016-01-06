@@ -7,7 +7,7 @@ type: properties
 <?php
 
 /**
- * Example of Property Editor.
+ * Example of editor.
  */
 
 papi_property( [
