@@ -23,24 +23,23 @@ article {
     border-bottom: 1px solid #ddd;
   }
 
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .gallery {
     @include outer-container;
     padding: 2em 0;
 
     .item {
-      @include span-columns(6);
 
-      @include media($medium-screen) {
-        @include span-columns(12);
+      @include media($large-screen) {
+        @include span-columns(6);
       }
 
       h3 {
         padding: 1em 0;
-      }
-
-      img {
-        max-width: 100%;
-        width: 100%;
       }
     }
   }
