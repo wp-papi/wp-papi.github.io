@@ -1,7 +1,9 @@
+<% type = type === 'properties' ? 'docs' : type %>
+
 <section class="sidebar">
     <div class="list">
         <h2>
-            <%- type === 'api' ? 'API' : (type.charAt(0).toUpperCase() + type.slice(1)) %>
+            <%- type.charAt(0).toUpperCase() + type.slice(1) %>
             <select class="version-select">
                 <option selected>3.x</option>
                 <option>2.x</option>
@@ -9,11 +11,20 @@
             </select>
         </h2>
         <ul class="menu-root">
-            <% type !== 'api' && site.pages.find({type: type}).sort('order').each(function (p) { %>
-                <li>
-                    <a href="/<%- p.path %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
-                </li>
-            <% }) %>
+          <% site.pages.find({type: type}).sort('title').each(function (p) { %>
+            <li>
+              <a href="/<%- p.path %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
+              <% if (p.child !== undefined) { %>
+                <ul>
+                  <% site.pages.find({type: p.child}).sort('title').each(function (c) { %>
+                    <li>
+                      <a href="/<%- c.path %>" class="sidebar-link<%- page.title === c.title ? ' current' : '' %><%- c.is_new ? ' new' : '' %>"><%- c.title %></a>
+                    </li>
+                  <% }) %>
+                </ul>
+              <% } %>
+            </li>
+          <% }) %>
         </ul>
     </div>
 </section>

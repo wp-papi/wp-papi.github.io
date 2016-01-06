@@ -1,7 +1,6 @@
 ---
 title: Installation
 type: docs
-order: 0
 ---
 
 #### Requirements

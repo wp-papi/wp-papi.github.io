@@ -1,7 +1,6 @@
 ---
 title: Upgrade guide
 type: docs
-order: 2
 ---
 
 This guide will describe how to update Papi 2 to Papi 3.

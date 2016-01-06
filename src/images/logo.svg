@@ -1,0 +1,14 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="450px" height="510px" viewBox="0 0 450 510" enable-background="new 0 0 450 510" xml:space="preserve">
+<g>
+	<path d="M432,18v474H18V18H432 M450,0h-18.25H18.25H0v18v474v18h18.25h413.5H450v-18V18V0L450,0z"/>
+	<rect x="35" y="35" width="379" height="120"/>
+	<rect x="36" y="173" width="180" height="120"/>
+	<rect x="234" y="173" width="180" height="120"/>
+	<rect x="35" y="311" width="379" height="18"/>
+	<rect x="36" y="347" width="379" height="18"/>
+	<rect x="35" y="383" width="379" height="18"/>
+	<rect x="35" y="419" width="379" height="18"/>
+	<rect x="35" y="455" width="379" height="18"/>
+</g>
+</svg>
