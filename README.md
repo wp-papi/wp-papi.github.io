@@ -7,11 +7,18 @@ Landning site for Papi.
 ## Install
 
 ```
-npm install
+$ npm install
 ```
 
 ## Run
 
 ```
-hexo server
+$ hexo server
+```
+
+## Deploy
+
+```
+$ npm run apigen
+$ hexo deploy
 ```

@@ -8,7 +8,7 @@ if (document.querySelector('.version-select')) {
   });
 }
 
-// Main navigation
+// Main mobile navigation.
 var mobileMenu = document.querySelector('#js-centered-navigation-menu');
 var mobileToggle = document.querySelector('#js-centered-navigation-mobile-menu');
 
