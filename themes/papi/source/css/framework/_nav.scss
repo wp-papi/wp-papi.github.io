@@ -4,9 +4,9 @@
   $base-font-color: $dark-gray !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #f0f2f1;
-  $centered-navigation-color: transparentize($base-font-color, 0.3);
-  $centered-navigation-color-hover: $base-font-color;
+  $centered-navigation-background: #f7f7f7;
+  $centered-navigation-color: #2c3e50;
+  $centered-navigation-color-hover: transparentize($centered-navigation-color, 0.2);
   $centered-navigation-height: 60px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
@@ -15,7 +15,7 @@
   $horizontal-bar-mode: $large-screen;
 
   background-color: $centered-navigation-background;
-  border-bottom: 1px solid darken($centered-navigation-background, 6%);
+  border-bottom: 1px #e1e5ea solid;
   min-height: $centered-navigation-height;
   width: 100%;
   z-index: 9999;
