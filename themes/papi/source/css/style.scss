@@ -14,7 +14,7 @@ $medium-screen: em(640) !default;
 @import "framework/table";
 @import "framework/typography";
 
-@import "content/article";
-@import "content/box";
-@import "content/credit";
-@import "content/docs";
+@import "partials/article";
+@import "partials/box";
+@import "partials/credit";
+@import "partials/docs";
