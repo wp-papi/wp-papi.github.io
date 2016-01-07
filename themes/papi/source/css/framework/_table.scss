@@ -3,14 +3,17 @@ table {
   margin-bottom: 1.25rem;
   border: solid 1px #DDDDDD;
   table-layout: auto;
+
   caption {
     background: transparent;
     color: #222222;
     font-size: 1rem;
     font-weight: bold;
   }
+
   thead {
     background: #F5F5F5;
+
     tr {
       th, td {
         padding: 0.5rem 0.625rem 0.625rem;
@@ -20,8 +23,10 @@ table {
       }
     }
   }
+
   tfoot {
     background: #F5F5F5;
+
     tr {
       th, td {
         padding: 0.5rem 0.625rem 0.625rem;
@@ -31,6 +36,7 @@ table {
       }
     }
   }
+
   tr {
     th, td {
       padding: 0.5625rem 0.625rem;
@@ -38,26 +44,31 @@ table {
       color: #222222;
       text-align: left;
     }
+
     &.even, &.alt, &:nth-of-type(even) {
       background: #F9F9F9;
     }
   }
+
   thead tr th {
     display: table-cell;
     line-height: 1.125rem;
   }
+
   tfoot tr {
     th, td {
       display: table-cell;
       line-height: 1.125rem;
     }
   }
+
   tbody tr {
     th, td {
       display: table-cell;
       line-height: 1.125rem;
     }
   }
+
   tr td {
     display: table-cell;
     line-height: 1.125rem;
