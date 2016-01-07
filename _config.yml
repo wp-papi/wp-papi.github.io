@@ -69,4 +69,3 @@ theme: papi
 deploy:
   type: github
   repository: git@github.com:wp-papi/wp-papi.github.io.git
-  branch: master
