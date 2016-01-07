@@ -5,6 +5,7 @@
 $large-screen: em(860) !default;
 $medium-screen: em(640) !default;
 
+@import "framework/footer";
 @import "framework/hero";
 @import "framework/highlight";
 @import "framework/nav";
