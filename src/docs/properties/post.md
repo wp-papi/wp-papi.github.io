@@ -57,6 +57,8 @@ With this property you can add reference to another post. It can't handle multip
 
 Key           | Default       | Description
 --------------|---------------|--------------------------------------------------
+labels        | array         | Array of labels, `select_post_type` that defaults to `Select Post Type` and `select_item` that defaults to `Select %s` (the post type name).
+layout        | 'simple'      | Post property has two different layouts, the `simple` one that is one dropdown with option labels and `advanced` that is two dropdown, one with all post types. `Since 3.0.0`
 placeholder   | empty string  | Placeholder text that's displayed when no option is slected.
 post_type     | 'post'        | The post type that the property will load posts from. Can only be one post type
 query         | array         | Append a `WP_Query` on all post types. Gist reference over `WP_Query`. Note that `post_type` in query will always be removed

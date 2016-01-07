@@ -47,6 +47,8 @@ With this property you can add reference to a term in a taxonomy. It can't handl
 
 Key           | Default       | Description
 --------------|---------------|--------------------------------------------------
+labels        | array         | Array of labels, `select_taxonomy` that defaults to `Select Taxonomy` and `select_item` that defaults to `Select %s term` (the taxonomy name).
+layout        | 'simple'      | Term property has two different layouts, the `simple` one that is one dropdown with option labels and `advanced` that is two dropdown, one with all taxonomies. `Since 3.0.0`
 placeholder   | null          | Placeholder text that's displayed when no option is slected.
 taxonomy      | 'post'        | The taxonomy that the property will load terms from. Can only be one taxonomy.
 select2       | true          | If true Select2 will be used, if false the native browser dropdown will be used.

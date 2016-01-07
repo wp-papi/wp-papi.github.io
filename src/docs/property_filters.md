@@ -12,8 +12,9 @@ type: docs
 
 /**
  * Example of `papi/format_value/{$property_type}` filter.
+ *
+ * @return mixed
  */
-
 add_filter( 'papi/format_value/string', function ( $value, $slug, $post_id ) {
   // do some magic with the value and return it.
   return $value;
@@ -33,8 +34,9 @@ Format the value of the property before it's returned to the theme.
 
 /**
  * Example of `papi/load_value/{$property_type}` filter.
+ *
+ * @return mixed
  */
-
 add_filter( 'papi/load_value/string', function ( $value, $slug, $post_id ) {
   // do some magic with the value and return it.
   return $value;
@@ -54,8 +56,9 @@ This filter is applied after the value is loaded in the database.
 
 /**
  * Example of `papi/update_value/{$property_type}` filter.
+ *
+ * @return mixed
  */
-
 add_filter( 'papi/update_value/string', function ( $value, $slug, $post_id ) {
   // do some magic with the value and return it.
   return $value;

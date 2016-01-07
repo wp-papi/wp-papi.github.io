@@ -12,8 +12,9 @@ type: docs
 
 /**
  * Example of `papi/settings/column_title_{$post_type}` filter.
+ *
+ * @return string
  */
-
 add_filter( 'papi/settings/column_title_module', function ( $page_type ) {
  return __( 'Module Type', 'my_theme' );
 } );
@@ -29,8 +30,9 @@ add_filter( 'papi/settings/column_title_module', function ( $page_type ) {
 
 /**
  * Example of `papi/settings/sort_order` filter.
+ *
+ * @return int
  */
-
 add_filter( 'papi/settings/sort_order', function () {
   return 1;
 } );
@@ -51,8 +53,9 @@ Default sort order is `1000`
 
 /**
  * Example of `papi/settings/standard_page_description_{$post_type}` filter.
+ *
+ * @return string
  */
-
 add_filter( 'papi/settings/standard_page_description_post', function ( $page_type ) {
   return __( 'The standard blog post', 'my_theme' );
 } );
@@ -74,8 +77,9 @@ where `Page` will be the singular name for the post type.
 
 /**
  * Example of `papi/settings/standard_page_description_{$post_type}` filter.
+ *
+ * @return string
  */
-
 add_filter( 'papi/settings/standard_page_description_post', function ( $page_type ) {
   return __( 'Blog page', 'my_theme' );
 } );
@@ -97,8 +101,9 @@ where `Page` will be the singular name for the post type.
 
 /**
  * Example of `papi/settings/standard_page_thumbnail_{$post_type}` filter.
+ *
+ * @return string
  */
-
 add_filter( 'papi/settings/standard_page_thumbnail_post', function () {
   return '/path/to/thumbnail.png';
 } );
@@ -119,8 +124,9 @@ Default value is the translation of `empty string`
 
 /**
  * Example of `papi/settings/page_type_from_post_qs` filter.
+ *
+ * @return string
  */
-
 add_filter( 'papi/settings/page_type_from_post_qs', function () {
   return 'parent_post';
 } );
@@ -147,8 +153,9 @@ Default value is `from_post`.
 
 /**
  * Example of `papi/settings/only_page_type_{$post_type}` filter.
+ *
+ * @return string
  */
-
 add_filter( 'papi/settings/only_page_type_post', function () {
   return 'post-page-type';
 } );
@@ -169,8 +176,9 @@ You can return a string or a array of strings.
 
 /**
  * Example of `papi/settings/directories` filter.
+ *
+ * @return bool
  */
-
 add_filter( 'papi/settings/directories', function () {
   return false;
 } );
@@ -193,8 +201,9 @@ Default value is `empty array`.
 
 /**
  * Example of `papi/settings/show_page_type_{$post_type}` filter.
+ *
+ * @return bool
  */
-
 add_filter( 'papi/settings/show_page_type_post', function ( $page_type ) {
   if ( $page_type === 'start-page-type' ) {
       return false;
@@ -223,14 +232,15 @@ Default value for every page type is `true`
 
 /**
  * Example of `papi/settings/show_standard_page_type_{$post_type}` filter.
+ *
+ * @return bool
  */
-
 add_filter( 'papi/settings/show_standard_page_type_page', '__return_false' );
 ```
 
 ### Description
 
-This filter allows you to show (**since 2.4.0** standard page is hidden by default) the standard page on the `Add New Page` view.
+This filter allows you to show the standard page on the `Add New Page` view. The standard page is hidden by default.
 
 Default value for every post type is `false`
 
@@ -243,13 +253,14 @@ Default value for every post type is `false`
 
 /**
  * Example of `papi/settings/show_standard_page_type_in_filter_{$post_type}` filter.
+ *
+ * @return bool
  */
-
 add_filter( 'papi/settings/show_standard_page_type_in_filter_page', '__return_false' );
 ```
 
 ### Description
 
-This filter allows you to show (**since 2.4.0** standard page is hidden by default) the standard page in the dropdown filter on the list page.
+This filter allows you to show the standard page in the dropdown filter on the list page. The standard page is hidden by default.
 
 Default value for every post type is `false`

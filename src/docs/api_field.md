@@ -21,7 +21,7 @@ With this function you can delete property value from the database. It will retu
 
 ### Parameters
 
-Parameter | Default | Required |
+Parameter | Default | Required | Description
 ----------|---------|----------|------------------------------------------------
 $post_id  | null    | no       | The post id will be added automatic if you are one a post, page or custom post type page. When deleting values from another post this argument will be required
 $slug     |         | yes      | The property slug to delete value from
@@ -75,7 +75,7 @@ With this function you can update property value from the database. It will retu
 
 ### Parameters
 
-Parameter | Default | Required |
+Parameter | Default | Required | Description
 ----------|---------|----------|------------------------------------------------
 $post_id  | null    | no       | The post id will be added automatic if you are one a post, page or custom post type page. When deleting values from another post this argument will be required
 $slug     |         | yes      | The property slug to update property value

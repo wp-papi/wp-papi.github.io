@@ -43,11 +43,15 @@ that returns a array with properties or tabs.
 /**
  * Example of using the callable parameter.
  */
-
 public function register() {
   $this->box( 'Content', [$this, 'content_box'] );
 }
 
+/**
+ * Example of callable box.
+ *
+ * @return array
+ */
 public function content_box() {
   return [
     papi_property( [

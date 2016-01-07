@@ -18,7 +18,7 @@ class Property_Stringx extends Papi_Property {}
 class Papi_Property_String_x extends Papi_Property {}
 
 // Good
-// type: string
+// type: stringx
 class Papi_Property_Stringx extends Papi_Property {}
 
 // type: image_video
@@ -45,9 +45,8 @@ add_action( 'papi/include', function () {
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Papi - Custom property string
+ * Papi - Custom string property
  */
-
 class Papi_Property_Stringx extends Papi_Property {
 
   /**
@@ -55,7 +54,6 @@ class Papi_Property_Stringx extends Papi_Property {
    *
    * @return array
    */
-
   public function get_default_settings() {
     return [
       'allow_html' => false
@@ -65,12 +63,10 @@ class Papi_Property_Stringx extends Papi_Property {
   /**
    * Generate the HTML for the property.
    */
-
   public function html() {
     ?>
       <input type="text" name="<?php echo $this->html_name(); ?>" value="<?php echo $this->get_value(); ?>" />
     <?php
   }
-
 }
 ```

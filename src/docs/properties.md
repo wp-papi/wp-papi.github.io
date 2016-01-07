@@ -10,7 +10,6 @@ child: properties
 /**
  * Example of the default options.
  */
-
 papi_property( [
   'after_class'  => '',
   'after_html'   => '',

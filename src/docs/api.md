@@ -43,9 +43,10 @@ This function will return a array with meta box title as keys and array of all P
 
 ### Parameters
 
-Parameter | Default | Required | Description
-----------|---------|----------|------------------------------------------------
-$post_id  | null    | no       | The post id will be added automatic if you are one a post, page or custom post type page. When fetching values from another post this argument will be required
+Parameter   | Default | Required | Description
+------------|---------|----------|------------------------------------------------
+$post_id    | null    | no       | The post id will be added automatic if you are one a post, page or custom post type page. When fetching values from another post this argument will be required
+$only_slugs | false   | no       | When true this will only return slugs and not the box titles. `Since 3.0.0`
 
 ## papi_property
 
@@ -86,7 +87,7 @@ This is great to use when you will share properties over many page types and it 
 Parameter         | Default | Required | Description
 ------------------|---------|----------|----------------------------------------
 $file_or_options  |         | yes      | File path or a array containing property options
-$values           | array | no       | The values to override the template values with
+$values           | array   | no       | The values to override the template values with
 
 ## papi_tab
 

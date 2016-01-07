@@ -4,16 +4,15 @@ type: types
 order: 2
 ---
 
+### Example
+
 ```php
 <?php
 
-/**
- * Example of a option type with no properties.
- */
 class Header_Option_Type extends Papi_Option_Type {
 
   /**
-   * The option type meta options.
+   * The type meta options.
    *
    * @return array
    */
@@ -22,6 +21,29 @@ class Header_Option_Type extends Papi_Option_Type {
       'menu' => 'options-general.php',
       'name' => 'Header'
     ];
+  }
+
+  /**
+   * Register content meta box.
+   */
+  public function register() {
+    $this->box( 'Content', [
+      papi_property( [
+        'title' => 'Name',
+        'slug'  => 'name',
+        'type'  => 'string'
+      ] ),
+      papi_property( [
+        'title' => 'Post',
+        'slug'  => 'post',
+        'type'  => 'post'
+      ] ),
+      papi_property( [
+        'title' => 'Text',
+        'slug'  => 'Text',
+        'type'  => 'text'
+      ] )
+    ] );
   }
 }
 ```
@@ -32,7 +54,7 @@ Option type is used to create option pages with Papi. Option types will not be s
 
 - Does not save the option type id in the database since options don't have a post id. So you can't have different option types that has the same property slug.
 
-### meta method
+### Meta method
 
 The `meta` is a required method of the option type class. It should return an array containing the required keys.
 
@@ -56,7 +78,6 @@ namespace Foo\Bar;
 /**
  * Example of a option type with namespace.
  */
-
 class Test_Option_Type extends \Papi_Option_Type {}
 ```
 

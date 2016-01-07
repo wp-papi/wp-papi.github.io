@@ -4,16 +4,15 @@ type: types
 order: 1
 ---
 
+### Example
+
 ```php
 <?php
 
-/**
- * Example of a attachment type.
- */
 class Attachment_Type extends Papi_Attachment_Type {
 
   /**
-   * The option type meta options.
+   * The type meta options.
    *
    * @return array
    */
@@ -29,19 +28,19 @@ class Attachment_Type extends Papi_Attachment_Type {
   public function register() {
     $this->box( 'Content', [
       papi_property( [
-        'title'    => 'Name',
-        'slug'     => 'name',
-        'type'     => 'string'
+        'title' => 'Name',
+        'slug'  => 'name',
+        'type'  => 'string'
       ] ),
       papi_property( [
-        'title'    => 'Post',
-        'slug'     => 'post',
-        'type'     => 'post'
+        'title' => 'Post',
+        'slug'  => 'post',
+        'type'  => 'post'
       ] ),
       papi_property( [
-        'title'    => 'Text',
-        'slug'     => 'Text',
-        'type'     => 'text'
+        'title' => 'Text',
+        'slug'  => 'Text',
+        'type'  => 'text'
       ] )
     ] );
   }
@@ -52,7 +51,7 @@ The special thing about attachment type is that you can only create one attachme
 
 The attachment type will register the properties in the modal window and on the post type so you can edit your fields on both pages.
 
-### meta method
+### Meta method
 
 The `meta` is a required method of the page type class. It should return an array containing the required keys.
 
@@ -62,3 +61,18 @@ name               | yes      | The name of the page type
 fill_labels        | no       | When this is true it will add the page type name to `add_new_item`, `edit_item` and `view_item` label. Both in WordPress admin and the admin bar on the front. You can override this with the `labels` array.
 labels             | no       | With this you can handle the `labels` object that exists on a [post type](http://codex.wordpress.org/Function_Reference/get_post_type_object). So this means that you can change "Add New Page" for every page type and have something like `Add New Startpage`. Just create a array with the `labels` keys and values on your page type meta array
 template           | no       | The template file to render. This can be both dot templates `pages.article` or `pages/article.php`. Extension is not required.
+
+## Namespaces
+
+```php
+<?php
+
+namespace Foo\Bar;
+
+/**
+ * Example of a option type with namespace.
+ */
+class Test_Attacment_Type extends \Papi_Attachment_Type {}
+```
+
+Papi has no problem to work with option types that have namespaces.

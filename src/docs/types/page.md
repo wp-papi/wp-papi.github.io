@@ -4,17 +4,15 @@ type: types
 order: 3
 ---
 
+### Example
+
 ```php
 <?php
-
-/**
- * Example of a page type with no properties.
- */
 
 class Video_Page_Type extends Papi_Page_Type {
 
   /**
-   * The page type meta options.
+   * The type meta options.
    *
    * @return array
    */
@@ -25,10 +23,33 @@ class Video_Page_Type extends Papi_Page_Type {
       'template'    => 'pages/video-page.php'
     ];
   }
+
+  /**
+   * Register content meta box.
+   */
+  public function register() {
+    $this->box( 'Content', [
+      papi_property( [
+        'title' => 'Name',
+        'slug'  => 'name',
+        'type'  => 'string'
+      ] ),
+      papi_property( [
+        'title' => 'Post',
+        'slug'  => 'post',
+        'type'  => 'post'
+      ] ),
+      papi_property( [
+        'title' => 'Text',
+        'slug'  => 'Text',
+        'type'  => 'text'
+      ] )
+    ] );
+  }
 }
 ```
 
-### meta method
+### Meta method
 
 The `meta` is a required method of the page type class. It should return an array containing the required keys.
 
@@ -68,17 +89,20 @@ This method is used to register all properties, tabs and remove meta boxes as de
 
 The box method can has callable method as the second argument that returns a array with properties or tabs.
 
-Read more about that under [box section](#box-(meta-box)).
+Read more about that under [box section](/docs/box.html).
 
-### display method
+### Display method
 
 ```php
 <?php
 
 /**
  * Example of `display` method.
+ *
+ * @param  string $post_type
+ *
+ * @return bool
  */
-
 public function display( $post_type ) {
   if ( $post_type === 'post' ) {
     return true;
@@ -96,25 +120,20 @@ Returning anything else then true will hide the page type.
 
 Default value is `true`.
 
-### remove method
+### Remove method
 
 ```php
 <?php
 
 /**
- * Example of `register` method.
+ * Example of `remove` method.
  */
-public function register() {
-  // A single metabox
-  $this->remove( 'comments' );
-
-  // Multiple metaboxes
-  $this->remove( ['comments', 'editor'] );
+public function remove() {
+  return ['commentsdiv', 'editor'];
 }
 ```
 
-It's easy to remove metaboxes with the `remove` method.
-You can remove both post type support and meta boxes with `remove.`
+Since 3.0.0 the remove method is removed and replace with a new remove method where you returns a string or array of strings of the post type support or meta box id that should be removed. You can remove both post type support and meta boxes with `remove.` This is because we removed one of the calls to `register` method so the boxes isn't loaded twice. Read more about this in the upgrade guide.
 
 Check out [remove_post_type_support](http://codex.wordpress.org/Function_Reference/remove_post_type_support#Parameters) for right post type support or [remove_meta_box](https://codex.wordpress.org/Function_Reference/remove_meta_box#Parameters) for meta box slugs.
 
@@ -128,7 +147,6 @@ namespace Foo\Bar;
 /**
  * Example of a page type with namespace.
  */
-
 class Test_Page_Type extends \Papi_Page_Type {}
 ```
 

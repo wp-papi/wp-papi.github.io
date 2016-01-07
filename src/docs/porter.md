@@ -67,13 +67,11 @@ $fields      | array   | no       | If true only the value will be return for fi
 /**
  * Example of adding a driver.
  */
-
 $porter->driver( new Papi_Porter_Driver_Example );
 
 /**
  * Example of change driver.
  */
-
 $porter->driver( 'example' );
 
 /**
