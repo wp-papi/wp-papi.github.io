@@ -4,6 +4,10 @@
   section {
     padding: 10px;
 
+    &.center {
+      text-align: center;
+    }
+
     &.sidebar {
       @include span-columns(3);
 
@@ -17,6 +21,8 @@
 .bg {
   &-light {
     background: #f7f7f7;
+    border-top: 1px solid #e1e5ea;
+    border-bottom: 1px solid #e1e5ea;
   }
 
   &-white {

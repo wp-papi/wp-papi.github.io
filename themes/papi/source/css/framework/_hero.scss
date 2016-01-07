@@ -1,14 +1,18 @@
 .hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
-  $hero-background: #3eb991;
+  $large-screen: em(860) !default;
+  $hero-background: #00AFC4;
   $hero-color: white;
   $gradient-angle: 10deg;
+  $hero-image: '/img/header-bg.png';
 
+  @include background(url($hero-image), no-repeat $hero-background scroll);
   background-color: $hero-background;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 3em;
 
   .hero-logo img {
     height: 4em;
