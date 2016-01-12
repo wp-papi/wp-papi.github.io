@@ -34,3 +34,9 @@ public function register() {
 ```
 
 You will need to implement a method call `remove` that returns a string or array of strings that will be used to remove post type supports or meta boxes.
+
+### Properties
+
+#### Text
+
+Since 3.0.0 `nl2br` is added as setting to text property and `true` by default, see [pull request 135](https://github.com/wp-papi/papi/pull/135).

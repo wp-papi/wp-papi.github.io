@@ -35,3 +35,4 @@ This property will output the textarea tag and the output will be a string with 
 Key        | Default | Description
 -----------|---------|------------------------------------------------------------
 allow_html | false   | Allow HTML in textarea
+nl2br      | true    | Inserts HTML line breaks before all newlines in a string `since 3.0.0`
