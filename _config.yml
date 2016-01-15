@@ -67,5 +67,5 @@ theme: papi
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: github
+  type: git
   repository: git@github.com:wp-papi/wp-papi.github.io.git
