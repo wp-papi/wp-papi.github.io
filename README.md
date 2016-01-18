@@ -1,8 +1,7 @@
 site
 ====
 
-Landning site for Papi.
-
+Landning site and documentation (for 3.x) for Papi.
 
 ## Install
 
