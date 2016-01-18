@@ -23,6 +23,6 @@ Requires [apigen](http://www.apigen.org/).
 $ npm run deploy
 ```
 
-# License
+## License
 
 MIT © [Fredrik Forsmo](https://github.com/frozzare)
