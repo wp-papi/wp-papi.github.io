@@ -104,11 +104,7 @@ Read more about that under [box section](/docs/box.html).
  * @return bool
  */
 public function display( $post_type ) {
-  if ( $post_type === 'post' ) {
-    return true;
-  }
-
-  return false;
+  return $post_type === 'post';
 }
 ```
 
