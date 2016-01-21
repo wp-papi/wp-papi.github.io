@@ -205,11 +205,7 @@ Default value is `empty array`.
  * @return bool
  */
 add_filter( 'papi/settings/show_page_type_post', function ( $page_type ) {
-  if ( $page_type === 'start-page-type' ) {
-      return false;
-  }
-
-  return true;
+  return $page_type !== 'start-page-type';
 } );
 ```
 
