@@ -12,7 +12,7 @@ usage: wp papi post <command>
    or: wp papi type <command>
 
 See 'wp help papi <command>' for more information on a specific command.
-``
+```
 
 ## Post command
 
@@ -37,10 +37,10 @@ If you use a different type name in your classes when you extended `Papi_Page_Ty
 ```
 $ wp papi type list
 
-+----------------------+--------------------------+------------------------+----------------------------+-----------------+------------+
-| name                 | id                       | post_type              | template                   | number of pages | type       |
-+----------------------+--------------------------+------------------------+----------------------------+-----------------+------------+
-| Article page         | pages/article-page-type  | page                   | pages/article-page.php     | 3               | page       |
-| List                 | options/list-option-type | n/a                    | n/a                        | n/a             | option     |
-+----------------------+--------------------------+------------------------+----------------------------+-----------------+------------+
++---------------+--------------------------+------------+----------------------------+-----------------+------------+
+| name          | id                       | post_type  | template                   | number of pages | type       |
++---------------+--------------------------+------------+----------------------------+-----------------+------------+
+| Article page  | pages/article-page-type  | page       | pages/article-page.php     | 3               | page       |
+| List          | options/list-option-type | n/a        | n/a                        | n/a             | option     |
++---------------+--------------------------+------------+----------------------------+-----------------+------------+
 ```
