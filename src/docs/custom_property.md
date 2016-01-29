@@ -70,3 +70,20 @@ class Papi_Property_Stringx extends Papi_Property {
   }
 }
 ```
+
+## Convert type
+
+A property has a convert type that describes how it will be prepared before converting the value from the database to the application. By default this value is `string` and that will try to convert the database value to a string, so if you doing a property that will store a array and the convert type is `string` you will get a empty value, changing the convert type to `array` will bypass the string conversion.
+
+```php
+class Papi_Property_Example extends Papi_Property {
+
+  /**
+   * The convert type.
+   *
+   * @var string
+   */
+  public $convert_type = 'array';
+
+}
+```
