@@ -26,3 +26,33 @@ mobileToggle.dispatchEvent(new Event('click'));
 
 // Initialize highlight.js
 hljs.initHighlightingOnLoad();
+
+// Sidebar menu navigation.
+var sidebarMenu = document.querySelector('.sidebar .menu-root');
+
+if (sidebarMenu) {
+  var pathname = window.location.pathname.replace('.html', '');
+  var childs = sidebarMenu.querySelectorAll('li ul');
+
+  for (var i = 0, l = childs.length; i < l; i++) {
+    var href = childs[i].parentElement.querySelector('a').href;
+
+    if (href.indexOf(pathname) !== -1) {
+
+    } else {
+      var links = childs[i].getElementsByTagName('a');
+      var found = false;
+
+      for (var j = 0, k = links.length; j < k; j++) {
+        if (links[j].href.indexOf(pathname) !== -1) {
+          found = true;
+          break;
+        }
+      }
+
+      if (!found) {
+        childs[i].className += ' hide';
+      }
+    }
+  }
+}
