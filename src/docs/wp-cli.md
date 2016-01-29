@@ -32,7 +32,7 @@ $ wp papi post get 1505
 
 This command can be used to list all types that are registered with Papi, it will list all types and not just page types.
 
-If you use a different type name in your classes when you extended `Papi_Page_Type`, for example `Feature_Module_Type`, the type value in the list will show `module` as value instead of `page`.
+If you use a different type name in your classes when you extended `Papi_Page_Type`, for example `Feature_Module_Type`, the type value in the list will show `module` as value instead of `page`
 
 ```
 $ wp papi type list
