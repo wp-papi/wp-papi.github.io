@@ -51,7 +51,7 @@ WP_Post Object
 
 ### Description
 
-With this property you can add reference to another post. It can't handle multiple references like [relationship](#relationship)
+With this property you can add reference to another post. It can't handle multiple references like [relationship](/docs/properties/relationship.html)
 
 ### Settings
 
