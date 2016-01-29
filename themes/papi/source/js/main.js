@@ -37,9 +37,7 @@ if (sidebarMenu) {
   for (var i = 0, l = childs.length; i < l; i++) {
     var href = childs[i].parentElement.querySelector('a').href;
 
-    if (href.indexOf(pathname) !== -1) {
-
-    } else {
+    if (href.indexOf(pathname) === -1) {
       var links = childs[i].getElementsByTagName('a');
       var found = false;
 
