@@ -80,7 +80,6 @@ limit         | -1 (no limit) | Prevent how many post references that can be add
 /**
  * Example of `papi/property/repeater/exclude` filter.
  */
-
 add_filter( 'papi/property/repeater/exclude', function ( $exclude ) {
   return array_merge( $exclude, [
     'string'

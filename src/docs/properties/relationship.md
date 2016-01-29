@@ -106,7 +106,6 @@ papi_property( [
 /**
  * Example of `papi/property/relationship/sort_options` filter.
  */
-
 add_filter( 'papi/property/relationship/sort_options', function ( $not_allowed ) {
   return array_merge( $not_allowed, [
     'Name (alphabetically)' => function ( $a, $b ) {

@@ -104,7 +104,6 @@ title  | string  | The title of the flexible layout.
 /**
  * Example of `papi/property/flexible/exclude` filter.
  */
-
 add_filter( 'papi/property/flexible/exclude', function ( $exclude ) {
   return array_merge( $exclude, [
     'string'
