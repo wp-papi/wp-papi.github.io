@@ -51,6 +51,8 @@ if (sidebarMenu) {
       if (!found) {
         childs[i].className += ' hide';
       }
+    } else if (pathname === '/docs/') {
+      childs[i].className += ' hide';
     }
   }
 }
