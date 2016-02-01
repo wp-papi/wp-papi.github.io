@@ -5,7 +5,7 @@ type: docs
 
 This is documentation for Papi 3.
 
-[Go to documentation for Papi 2.x](/docs-2.x/).
+[Go to documentation for Papi 2.x](/docs-2.x/)
 
 #### Requirements
 
