@@ -3,9 +3,9 @@ title: Getting Started
 type: docs
 ---
 
-[Go to documentation for Papi 2.x](/docs-2.x/).
+This is documentation for Papi 3.
 
-This is documentation for Papi 3 beta 1.
+[Go to documentation for Papi 2.x](/docs-2.x/).
 
 #### Requirements
 
