@@ -231,7 +231,7 @@ Default value for every page type is `true`
  *
  * @return bool
  */
-add_filter( 'papi/settings/show_standard_page_type_page', '__return_false' );
+add_filter( 'papi/settings/show_standard_page_type_page', '__return_true' );
 ```
 
 ### Description
@@ -252,7 +252,7 @@ Default value for every post type is `false`
  *
  * @return bool
  */
-add_filter( 'papi/settings/show_standard_page_type_in_filter_page', '__return_false' );
+add_filter( 'papi/settings/show_standard_page_type_in_filter_page', '__return_true' );
 ```
 
 ### Description
