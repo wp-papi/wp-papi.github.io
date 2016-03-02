@@ -13,7 +13,6 @@ type: docs
 $this->box( [
   'capabilities' => [],
   'context'      => 'normal',
-  'mode'         => 'standard',
   'priority'     => 'default',
   'sort_order'   => 1000,
   'title'        => ''
