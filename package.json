@@ -20,7 +20,7 @@
     "hexo-deployer-git": "0.0.4"
   },
   "scripts": {
-    "apigen": "rm -rf ./tmp/papi && git clone git@github.com:wp-papi/papi.git ./tmp/papi && cd ./tmp/papi && git checkout v3.0.0 && apigen generate --groups=none -s ./src -d ../../public/apigen",
+    "apigen": "rm -rf ./tmp/papi && git clone git@github.com:wp-papi/papi.git ./tmp/papi && cd ./tmp/papi && git checkout v3.0.1 && apigen generate --groups=none -s ./src -d ../../public/apigen",
     "deploy": "rm -rf .deploy_git public && hexo generate && npm run apigen && cp -R static/* public/ && cp LICENSE public/ && hexo deploy"
   }
 }
