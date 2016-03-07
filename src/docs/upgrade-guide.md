@@ -45,6 +45,10 @@ It has backward compatibility for the old layout key. This may cause problem wit
 
 The slug will be something like this: `sections_0_flexible_layout`, where `sections` is your flexible slug, `0` is the row and `_flexible_layout` is the new layout key. The value should be a slug of the layout title, the same value as the old `_layout` rows that exists on each property.
 
+#### Flexible and Repeater
+
+If you did array properties without call `papi_property` for flexible or repeater items you need to use `papi_property` since we removed the support for array properties. So just use `papi_property( [] )` and not `[]`.
+
 #### Text
 
 Since 3.0.0 `nl2br` is added as setting to text property and `true` by default [#135](https://github.com/wp-papi/papi/pull/135).
