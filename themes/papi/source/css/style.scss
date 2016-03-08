@@ -13,6 +13,7 @@ $medium-screen: em(640) !default;
 @import "framework/sidebar";
 @import "framework/table";
 @import "framework/typography";
+@import "framework/utils";
 
 @import "partials/article";
 @import "partials/credit";

@@ -52,4 +52,8 @@ p {
     font-size: 0.8em;
     text-transform: uppercase;
   }
+
+  &.no-margin {
+    margin: 0;
+  }
 }
