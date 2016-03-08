@@ -90,7 +90,7 @@ $categories = array_map( function ( $cat ) {
 }, get_categories() );
 
 papi_property( [
-  'title'    => 'Categories'
+  'title'    => 'Categories',
   'type'     => 'relationship',
   'settings' => [
     'items' => $categories
