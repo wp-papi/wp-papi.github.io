@@ -5,14 +5,16 @@
     <% } %>
     <section>
       <article>
-        <h2><%- page.title %><%- page.type === 'properties' ? ' property' : '' %></h2>
+        <h2><%- page.main ? page.main : page.title %><%- page.type === 'properties' ? ' property' : '' %></h2>
         <%- page.content %>
+        <% if (page.type === 'properties' || page.type === 'docs') { %>
         <div class="footer">
           Caught a mistake or want to contribute to the documentation?
           <a href="https://github.com/wp-papi/wp-papi.github.io/blob/source/src/<%- page.path.replace(/\.html$/, '.md') %>" target="_blank">
             Edit this page on Github!
           </a>
         </div>
+        <% } %>
         <% if (page.type === 'docs') { %>
           <div class="guide-links">
             <% site.pages.find({ type: page.type, order: page.order - 1 }).each(function (page) { %>

@@ -1,0 +1,52 @@
+.community-properties {
+
+  input {
+    padding: 10px;
+    width: 90%;
+  }
+
+  ul {
+    border-top: 1px solid #e1e5ea;
+    margin-bottom: 50px;
+    padding: 0;
+    width: 96%;
+
+    @include media($large-screen) {
+      width: 93%;
+    }
+
+    li {
+      border: 1px solid #e1e5ea;
+      border-top: 0;
+      list-style: none;
+      margin: 0;
+      padding: 20px 10px;
+
+      &:last-child {
+        border-bottom: 1px solid #e1e5ea;
+      }
+
+      &.hide {
+        display: none;
+      }
+
+      h4 {
+        margin: 0;
+      }
+
+      .requires {
+        background: #f7f7f7;
+        border: 1px solid #e1e5ea;
+        float: right;
+        font-size: 14px;
+        margin-top: -30px;
+        padding: 5px;
+
+        &:before {
+          content: 'Requries: ';
+        }
+      }
+    }
+  }
+
+}

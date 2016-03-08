@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <%
-  var title = page.title;
+  var title = page.main ? page.main : page.title;
 
   if (is_archive()){
     title = 'Archives';
@@ -38,6 +38,7 @@
   <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#181f27">
   <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com/">
   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto%20Mono" rel="stylesheet" type="text/css">
   <%- css('css/style') %>
   <%- partial('google-analytics') %>

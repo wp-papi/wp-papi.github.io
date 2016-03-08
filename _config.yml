@@ -68,3 +68,7 @@ theme: papi
 deploy:
   type: git
   repository: git@github.com:wp-papi/wp-papi.github.io.git
+
+# Markdown
+marked:
+  breaks: false

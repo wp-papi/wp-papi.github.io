@@ -56,3 +56,32 @@ if (sidebarMenu) {
     }
   }
 }
+
+// Community properties search
+var communityProperties = document.querySelector('.community-properties');
+
+if (communityProperties) {
+  var search = communityProperties.querySelector('#search');
+
+  search.addEventListener('keyup', function(e) {
+    e.preventDefault();
+
+    var value = this.value.toLowerCase();
+    var list = this.parentElement.querySelectorAll('ul li');
+
+    for(var i = 0, l = list.length; i < l; i++) {
+      var keywords = list[i].getAttribute('data-keywords');
+      keywords = keywords === null ? '' : keywords;
+      var title = list[i].querySelector('h4');
+      title = typeof title === 'undefined' ? '' : title.innerText;
+
+      if (title.toLowerCase().indexOf(value) !== -1 || keywords.toLowerCase().indexOf(value) !== -1) {
+        list[i].className = '';
+      } else if (list[i].className.indexOf('hide') === -1) {
+        list[i].className += ' hide';
+      } else if (value === '' && list[i].className.indexOf('hide') !== -1) {
+        list[i].className = '';
+      }
+    }
+  });
+}
