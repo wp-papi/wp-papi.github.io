@@ -23,7 +23,7 @@ type: community
       <h4>Color property</h4>
       <span class="requires">3 or higher</span>
       <p>Aliquam cum curae aptent luctus cupidatat. Ac magna rhoncus. Esse adipisicing incididunt natoque. Himenaeos proident dictum. Varius mollit netus laborum nisi.</p>
-      <a href="#">Link to repository</a> - <a href="#">By Fredrik Forsmo</a>
+      <a href="#">Link to repository</a> - By <a href="#">Fredrik Forsmo</a>
     </li>
 
     Don't forget to unit test your property and please try adding them in alphabetical order!
