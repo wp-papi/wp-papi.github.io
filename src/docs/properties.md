@@ -58,7 +58,7 @@ required     | false        | By default all fields are non required in Papi but
 sidebar      | true         | Boolean that shows the sidebar on each property. If false the sidebar won’t show
 settings     | array        | Array with custom settings for the property
 sort_order   | 1000         | Numeric value, lowest value in the meta box will be at the top and the highest value at the bottom
-slug         | empty string | The slug of property. If empty or not used the title will be generated to slug value
+slug         | empty string | The slug of property. If empty or not used the title will be generated to slug value. Slugs that contains dash will be converted to underscore, for example `left-text => left_text`
 title        | empty string | The title of the property. Can be empty for blank title
 type         | empty string | The property type (lower case is preferred to use)
 value        | empty string | The default value that are presented in the property
