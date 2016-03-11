@@ -5,6 +5,10 @@
 $large-screen: em(860) !default;
 $medium-screen: em(640) !default;
 
+body {
+  background: #f7f7f7;
+}
+
 @import "framework/footer";
 @import "framework/hero";
 @import "framework/highlight";
