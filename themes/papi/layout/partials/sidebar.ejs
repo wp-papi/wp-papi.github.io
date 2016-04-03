@@ -28,5 +28,11 @@
             </li>
           <% }) %>
         </ul>
+        <% if (type === 'docs') { %>
+          <ul class="menu-root">
+            <li><a href="/docs/apigen/">API reference docs</a></li>
+            <li><a href="https://github.com/wp-papi/papi/releases">Changelog</a></li>
+          </ul>
+        <% } %>
     </div>
 </section>
