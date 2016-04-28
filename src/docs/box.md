@@ -19,7 +19,7 @@ $this->box( [
 ] );
 ```
 
-Documentation of the `box` method. `box` is a short name for `metabox` in Papi.
+Documentation of the `box` method. `box` is a short name for meta box in Papi.
 
 ### Options
 
