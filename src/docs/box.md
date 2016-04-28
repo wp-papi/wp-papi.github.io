@@ -92,3 +92,28 @@ return [
   ] )
 ];
 ```
+
+If you don't want different files per box you can create a function that returns the same as the box file and call the functions within the box.
+
+```
+<?php
+// my-page-type.php
+$this->box( content_box() );
+
+// boxes.php
+function content_box() {
+  return [
+    'title' => 'Content',
+
+    papi_property( [
+      'type'  => 'string',
+      'title' => 'Name'
+    ] ),
+
+    papi_property( [
+      'type'  => 'text',
+      'title' => 'About'
+    ] )
+  ];
+}
+```
