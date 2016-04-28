@@ -97,6 +97,7 @@ If you don't want different files per box you can create a function that returns
 
 ```
 <?php
+
 // my-page-type.php
 $this->box( content_box() );
 
