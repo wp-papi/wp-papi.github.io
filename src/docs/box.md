@@ -64,3 +64,31 @@ public function content_box() {
   ];
 }
 ```
+
+### Share boxes across types
+
+When doing a large site it can be handy to share boxes between types, so the box method can take a file path to a box template file where you define both box options and properties. The file need to be placed inside your registered Papi directory, for example `boxes/content.php`.
+
+Example:
+
+```
+<?php
+
+// my-page-type.php
+$this->box( 'boxes/content.php' );
+
+// boxes/content.php
+return [
+  'title' => 'Content',
+
+  papi_property( [
+    'type'  => 'string',
+    'title' => 'Name'
+  ] ),
+
+  papi_property( [
+    'type'  => 'text',
+    'title' => 'About'
+  ] )
+];
+```
