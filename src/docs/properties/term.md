@@ -14,7 +14,7 @@ papi_property( [
   'title'    => 'Term',
   'slug'     => 'my_term_slug',
   'type'     => 'term',
-  'settings  => [
+  'settings' => [
     'taxonomy' => 'my_taxonomy'
   ]
 ] )
