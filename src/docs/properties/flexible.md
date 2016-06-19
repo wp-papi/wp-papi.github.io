@@ -74,7 +74,7 @@ array
 
 ### Description
 
-The flexible property can create a repeater with different layouts that contains sub fields. That's the big different from a [repeater property](/docs/properties/repeater.html). You can't have a flexible or repeater in a flexible.
+The flexible property can create a repeater with different layouts that contains sub fields. That's the big different from a [repeater property](/docs/properties/repeater.html). You can have repeater inside flexible since `3.1.0`, but not flexible inside flexible.
 
 ![Flexible example](/images/docs/property-flexible.png)
 
@@ -82,7 +82,7 @@ The flexible property can create a repeater with different layouts that contains
 
 Key           | Default       | Description
 --------------|---------------|----------------------------------------------------------
-add_new_label | 'Add new row' | Add new label text. **Since 2.4.2**
+add_new_label | 'Add new row' | Add new label text.
 closed_rows   | false         | When this is true the existing rows will be closed when the page is loaded.
 items         | array         | Array of key/value. See `Items key/value` section.
 layout        | 'table'       | Choose between `table` or `row`.

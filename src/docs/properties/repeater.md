@@ -58,7 +58,7 @@ array
 
 ### Description
 
-The repeater property can create a repeater of sub fields which can be repeated again and again. You can't have a flexible or repeater in a repeater.
+The repeater property can create a repeater of sub fields which can be repeated again and again. You can have repeater inside repeater since `3.1.0`, but not flexible inside repeater.
 
 ![Repeater example](/images/docs/property-repeater.png)
 
@@ -66,7 +66,7 @@ The repeater property can create a repeater of sub fields which can be repeated 
 
 Key           | Default       | Description
 --------------|---------------|----------------------------------------------------------
-add_new_label | 'Add new row' | Add new label text. **Since 2.4.2**
+add_new_label | 'Add new row' | Add new label text.
 closed_rows   | false         | When this is true the existing rows will be closed when the page is loaded.
 items         | array         | The array of properties, the same key/values as `$this->property` method or `papi_property` function has. You can't use repeater or flexible inside a repeater.
 layout        | 'table'       | Choose between `table` or `row`.
