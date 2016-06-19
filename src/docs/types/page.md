@@ -85,6 +85,23 @@ When you using `template` key you can get a better structure of all pages type y
 
 When creating a new page you will get a new view before you get the edit view for your page where you should choose which page type to use. This will happen for all post types that uses page types.
 
+### Body classes method
+
+```php
+<?php
+
+/**
+ * Example of `body_classes` method.
+ *
+ * @return array
+ */
+public function body_classes() {
+  return ['custom-class'];
+}
+```
+
+With this method you can add custom body classes to body when a page type is rendered in the WordPress admin.
+
 ### Box method
 
 This method is used to register all properties, tabs and remove meta boxes as described above.

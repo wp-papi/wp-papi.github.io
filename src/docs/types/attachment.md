@@ -51,6 +51,23 @@ The special thing about attachment type is that you can only create one attachme
 
 The attachment type will register the properties in the modal window and on the post type so you can edit your fields on both pages.
 
+### Body classes method
+
+```php
+<?php
+
+/**
+ * Example of `body_classes` method.
+ *
+ * @return array
+ */
+public function body_classes() {
+  return ['custom-class'];
+}
+```
+
+With this method you can add custom body classes to body when a page type is rendered in the WordPress admin.
+
 ### Help method
 
 ```php
