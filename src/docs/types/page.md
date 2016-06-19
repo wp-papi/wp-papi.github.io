@@ -53,18 +53,20 @@ class Video_Page_Type extends Papi_Page_Type {
 
 The `meta` is a required method of the page type class. It should return an array containing the required keys.
 
-Options            | Required | Description
--------------------|----------|------------
-name               | yes      | The name of the page type
-child_types        | no       | Array of page type that will be available when `parent_post` query string exists. The array values should be the page type id.
-description        | no       | The description of the page type
-fill_labels        | no       | When this is true it will add the page type name to `add_new_item`, `edit_item` and `view_item` label. Both in WordPress admin and the admin bar on the front. You can override this with the `labels` array.
-labels             | no       | With this you can handle the `labels` object that exists on a [post type](http://codex.wordpress.org/Function_Reference/get_post_type_object). So this means that you can change "Add New Page" for every page type and have something like `Add New Startpage`. Just create a array with the `labels` keys and values on your page type meta array
-post_type          | no       | Array of post types that the page type should be registered on. Default is `page`
-sort_order         | no       | The sort order number of the page type
-standard_type      | no       | True or false if standard page type should be displayed on `Add New Page` when `parent_post` query string exists or when you want to hide standard page when a post type only has one page type, like `only_page_type` filter.
-template           | no       | The template file to render. This can be both dot templates `pages.article` or `pages/article.php`. Extension is not required. Dot templates and extension requirement does only exists in 2.3.0 and above.
-thumbnail          | no       | The thumbnail image that should appear on the add new page
+Options             | Required | Description
+--------------------|----------|------------
+name                | yes      | The name of the page type
+child_types         | no       | Array of page type that will be available when `parent_post` query string exists. The array values should be the page type id.
+description         | no       | The description of the page type
+fill_labels         | no       | When this is true it will add the page type name to `add_new_item`, `edit_item` and `view_item` label. Both in WordPress admin and the admin bar on the front. You can override this with the `labels` array.
+labels              | no       | With this you can handle the `labels` object that exists on a [post type](http://codex.wordpress.org/Function_Reference/get_post_type_object). So this means that you can change "Add New Page" for every page type and have something like `Add New Startpage`. Just create a array with the `labels` keys and values on your page type meta array
+post_type           | no       | Array of post types that the page type should be registered on. Default is `page`
+show_screen_options | no       | Show screen options tabs. Default is `true`, since `3.1.0`.
+show_help_tabs      | no       | Show help tabs. Default is `true`, since `3.1.0`.
+sort_order          | no       | The sort order number of the page type
+standard_type       | no       | True or false if standard page type should be displayed on `Add New Page` when `parent_post` query string exists or when you want to hide standard page when a post type only has one page type, like `only_page_type` filter.
+template            | no       | The template file to render. This can be both dot templates `pages.article` or `pages/article.php`. Extension is not required. Dot templates and extension requirement does only exists in 2.3.0 and above.
+thumbnail           | no       | The thumbnail image that should appear on the add new page
 
 ```javascript
 /**
@@ -83,7 +85,7 @@ When you using `template` key you can get a better structure of all pages type y
 
 When creating a new page you will get a new view before you get the edit view for your page where you should choose which page type to use. This will happen for all post types that uses page types.
 
-### box method
+### Box method
 
 This method is used to register all properties, tabs and remove meta boxes as described above.
 
@@ -116,6 +118,42 @@ Returning anything else then true will hide the page type.
 
 Default value is `true`.
 
+### Help method
+
+```php
+<?php
+
+/**
+ * Example of `help` method.
+ *
+ * @return array
+ */
+public function help() {
+  return [
+    'Custom title' => 'Custom help text'
+  ];
+}
+```
+
+Add custom help tabs, array of key/value where the key is the title and the value is the content, since `3.1.0`.
+
+### Help sidebar method
+
+```php
+<?php
+
+/**
+ * Example of `help_sidebar` method.
+ *
+ * @return string
+ */
+public function help_sidebar() {
+  return '<p>Hello, world</p>';
+}
+```
+
+Add text to help sidebar, since `3.1.0`.
+
 ### Remove method
 
 ```php
@@ -123,6 +161,8 @@ Default value is `true`.
 
 /**
  * Example of `remove` method.
+ *
+ * @return array
  */
 public function remove() {
   return ['commentsdiv', 'editor'];
