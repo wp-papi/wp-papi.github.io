@@ -28,6 +28,20 @@ $ wp papi post get 1505
 +----------+----------+-----------+
 ```
 
+## Term command
+
+This command can be used to show which properties a term has and which properties that has a value.
+
+```
+$ wp papi term get 1505
+
++----------+----------+-----------+
+| slug     | type     | has value |
++----------+----------+-----------+
+| name     | string   | true      |
++----------+----------+-----------+
+```
+
 ## Type command
 
 This command can be used to list all types that are registered with Papi, it will list all types and not just page types.
