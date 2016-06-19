@@ -65,4 +65,4 @@ It's only a visual property and will not save any new data or something. Propert
 
 Key           | Default       | Description
 --------------|---------------|----------------------------------------------------------
-items         | array         | The array of properties, the same key/values as `$this->property` method or `papi_property` function has.
+items         | array         | The array of properties, the same key/values as `papi_property` function has.
