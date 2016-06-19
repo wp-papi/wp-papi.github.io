@@ -152,7 +152,24 @@ public function help_sidebar() {
 }
 ```
 
-Add text to help sidebar, since `3.1.0`.
+Add custom html to help sidebar, since `3.1.0`
+
+### Publish box method
+
+```php
+<?php
+
+/**
+ * Example of `publish_box` method.
+ *
+ * @return string
+ */
+public function publish_box() {
+  return '<p>Hello, world</p>';
+}
+```
+
+Add custom html to publish box, since `3.1.0`
 
 ### Remove method
 
