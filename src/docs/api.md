@@ -3,6 +3,22 @@ title: API
 type: docs
 ---
 
+## papi_get_entry_type_css_class
+
+```php
+<?php
+
+/**
+ * Example output from `papi_get_entry_type_css_class` function.
+ */
+
+string 'standard-page-type'
+```
+
+### Description
+
+This function will return the css class that is added to the body for a entry type.
+
 ## papi_get_page_type_key
 
 ```php
