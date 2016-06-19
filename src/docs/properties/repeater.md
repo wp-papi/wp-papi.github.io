@@ -68,7 +68,7 @@ Key           | Default       | Description
 --------------|---------------|----------------------------------------------------------
 add_new_label | 'Add new row' | Add new label text.
 closed_rows   | false         | When this is true the existing rows will be closed when the page is loaded.
-items         | array         | The array of properties, the same key/values as `$this->property` method or `papi_property` function has. You can't use repeater or flexible inside a repeater.
+items         | array         | The array of properties, the same key/values as `papi_property` function has. You can't use repeater or flexible inside a repeater.
 layout        | 'table'       | Choose between `table` or `row`.
 limit         | -1 (no limit) | Prevent how many post references that can be added.
 

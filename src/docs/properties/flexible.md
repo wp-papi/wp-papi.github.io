@@ -92,7 +92,7 @@ limit         | -1 (no limit) | Prevent how many post references that can be add
 
 Key    | Default | Description
 -------|---------|----------------------------------------------------------
-items  | array   | The array of properties, the same key/values as `$this->property` method or `papi_property` function has. You can't use repeater or flexible inside a flexible.
+items  | array   | The array of properties, the same key/values as `papi_property` function has. You can't use repeater or flexible inside a flexible.
 slug   | string  | The slug of the flexible layout. **This is not required**. If you don't have a slug value it will be generated from the title.
 title  | string  | The title of the flexible layout.
 
