@@ -50,9 +50,9 @@ class Header_Option_Type extends Papi_Option_Type {
 
 Option type is used to create option pages with Papi. Option types will not be showed on Papi's tool page since they don't belong to a post type.
 
-### Differents between option type and a page type
+### Differents between option type and a page/taxonomy type
 
-- Does not save the option type id in the database since options don't have a post id. So you can't have different option types that has the same property slug.
+- Does not save the option type id in the database since options don't have a post/term id. So you can't have different option types that has the same property slug.
 
 ### Meta method
 
