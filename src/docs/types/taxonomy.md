@@ -63,7 +63,7 @@ redirect_after_create | no       | Redirect after term is created where all Pap
 show_screen_options   | no       | Show screen options tabs. Default is `true`, since `3.1.0`
 show_help_tabs        | no       | Show help tabs. Default is `true`, since `3.1.0`
 sort_order            | no       | The sort order number of the taxonomy type
-template              | no       | The template file to render. This can be both dot templates `taxonomies.open` or `taxonomies/open.php`. Extension is not required.
+template              | no       | The template file to render. This can be both dot templates `taxonomies.open` or `taxonomies/open.php`, extension is not required.
 
 ### Body classes method
 
