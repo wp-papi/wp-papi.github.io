@@ -68,8 +68,8 @@ show_page_template   | no       | Show page template dropdown. Default is `true`
 show_page_attributes | no       | Show page attributes dropdown. Default is `true`, since `3.1.0`
 sort_order           | no       | The sort order number of the page type
 standard_type        | no       | True or false if standard page type should be displayed on `Add New Page` when `parent_post` query string exists or when you want to hide standard page when a post type only has one page type, like `only_page_type` filter.
-template             | no       | The template file to render. This can be both dot templates `pages.article` or `pages/article.php`. Extension is not required. Dot templates and extension requirement does only exists in 2.3.0 and above.
-thumbnail           | no       | The thumbnail image that should appear on the add new page
+template             | no       | The template file to render. This can be both dot templates `pages.article` or `pages/article.php`. Extension is not required.
+thumbnail            | no       | The thumbnail image that should appear on the add new page
 
 ```javascript
 /**

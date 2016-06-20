@@ -47,8 +47,20 @@ class Open_Taxonomy_Type extends Papi_Attachment_Type {
 }
 ```
 
-The special thing about attachment type is that you can only create one attachment type since you can't have a step between uploading a file and edit where you can choose which type to create.
+### Meta method
 
-The attachment type will register the properties in the modal window and on the post type so you can edit your fields on both pages.
+The `meta` is a required method of the page type class. It should return an array containing the required keys.
 
-It has the same method and settings as a [page type](/docs/types/page.html).
+Options               | Required | Description
+----------------------|----------|------------
+name                  | yes      | The name of the page type
+description           | no       | The description of the page type
+fill_labels           | no       | When this is true it will add the page type name to `add_new_item`, `edit_item` and `view_item` label. Both in WordPress admin and the admin bar on the front. You can override this with the `labels` array.
+labels                | no       | With this you can handle the `labels` object that exists on a [taxonomy](https://codex.wordpress.org/Function_Reference/get_taxonomy). So this means that you can change "Add New Page" for every page type and have something like `Add New Startpage`. Just create a array with the `labels` keys and values on your page type meta array
+taxonomy              | no       | Array of taxonomies that the taxonomy type should be registered on. Default is empty string
+redirect_after_create | false    | Redirect after term is created where all Papi fields will be.
+show_screen_options   | no       | Show screen options tabs. Default is `true`, since `3.1.0`
+show_help_tabs        | no       | Show help tabs. Default is `true`, since `3.1.0`
+sort_order            | no       | The sort order number of the page type
+template              | no       | The template file to render. This can be both dot templates `pages.article` or `pages/article.php`. Extension is not required.
+thumbnail             | no       | The thumbnail image that should appear on the add new page
