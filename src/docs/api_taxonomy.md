@@ -22,7 +22,7 @@ echo papi_get_taxonomy_type_id( 2 );
 
 ### Description
 
-When given a term id it will fetch the Papi taxonomy for that term id instead.
+When given a term id it will fetch the Papi taxonomy for that term id instead, since `3.1.0`
 
 ### Parameters
 
@@ -48,7 +48,7 @@ echo papi_get_taxonomy_type_name( 2 );
 
 ### Description
 
-Get the taxonomy type name. Useful when you will print out the name of the taxonomy type in your theme.
+Get the taxonomy type name. Useful when you will print out the name of the taxonomy type in your theme, since `3.1.0`
 
 You can also use [the_papi_taxonomy_type_name](#the_papi_taxonomy_type_name) to display it without `echo`
 
@@ -77,7 +77,7 @@ the_papi_taxonomy_type_name( 2 );
 
 ### Description
 
-Print the taxonomy type name. Useful when you will print out the name of the taxonomy type in your theme.
+Print the taxonomy type name. Useful when you will print out the name of the taxonomy type in your theme, since `3.1.0`
 
 You can also use [papi_taxonomy_type_name](#papi_taxonomy_type_name) to fetch the name into a variable.
 
