@@ -41,7 +41,7 @@ $term_id  | null    | no       | The term id will be added automatic if you are 
 echo papi_get_taxonomy_type_name();
 // => "Open Taxonomy"
 
-// with post id
+// with term id
 echo papi_get_taxonomy_type_name( 2 );
 // => "Article Taxonomy"
 ```
@@ -70,7 +70,7 @@ $term_id  | null    | no       | The term id will be added automatic if you are 
 the_papi_taxonomy_type_name();
 // => "Open Taxonomy"
 
-// with post id
+// with term id
 the_papi_taxonomy_type_name( 2 );
 // => "Article Taxonomy"
 ```
