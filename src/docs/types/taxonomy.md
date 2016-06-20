@@ -9,7 +9,7 @@ order: 4
 ```php
 <?php
 
-class Open_Taxonomy_Type extends Papi_Attachment_Type {
+class Open_Taxonomy_Type extends Papi_Taxonomy_Type {
 
   /**
    * The type meta options.
@@ -18,8 +18,9 @@ class Open_Taxonomy_Type extends Papi_Attachment_Type {
    */
   public function meta() {
     return [
-      'name'     => 'Open',
-      'taxonomy' => 'category'
+      'name'                  => 'Open',
+      'taxonomy'              => 'category',
+      'redirect_after_create' => true
     ];
   }
 
