@@ -5,7 +5,7 @@
     <% } %>
     <section>
       <article>
-        <h2><%- page.main ? page.main : page.title %><%- page.type === 'properties' ? ' property' : '' %></h2>
+        <h1><%- page.main ? page.main : page.title %><%- page.type === 'properties' ? ' property' : '' %></h1>
         <%- page.content %>
         <% if (page.type === 'properties' || page.type === 'docs') { %>
         <div class="footer">
