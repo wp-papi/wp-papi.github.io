@@ -63,5 +63,4 @@ redirect_after_create | false    | Redirect after term is created where all Pap
 show_screen_options   | no       | Show screen options tabs. Default is `true`, since `3.1.0`
 show_help_tabs        | no       | Show help tabs. Default is `true`, since `3.1.0`
 sort_order            | no       | The sort order number of the page type
-template              | no       | The template file to render. This can be both dot templates `pages.article` or `pages/article.php`. Extension is not required.
-thumbnail             | no       | The thumbnail image that should appear on the add new page
+template              | no       | The template file to render. This can be both dot templates `taxonomies.open` or `taxonomies/open.php`. Extension is not required.
