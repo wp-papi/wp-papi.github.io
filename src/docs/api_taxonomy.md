@@ -85,4 +85,4 @@ You can also use [papi_taxonomy_type_name](#papi_taxonomy_type_name) to fetch th
 
 Parameter | Default | Required | Description
 ----------|---------|----------|------------------------------------------------
-$post_id  | null    | no       | The term id will be added automatic if you are one a term, page or custom taxonomy type page. When fetching values from another term this argument will be required
+$term_id  | null    | no       | The term id will be added automatic if you are one a term, page or custom taxonomy type page. When fetching values from another term this argument will be required

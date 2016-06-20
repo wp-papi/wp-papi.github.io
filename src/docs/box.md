@@ -29,8 +29,8 @@ Key          | Default      | Description
 -------------|--------------|---------------------------------------------------
 capabilities | array        | Can be a string with a role or capability or a array with many values
 context      | 'normal'     | The same value as for context in `add_meta_box` or `after_title` if you want is after the title input field.
-display      | true         | Prevent box from render when set to `false`
-layout       | 'horizontal' | The box can be rendered in `horizontal` or `vertical` mode, where the title and description is rendered above the field.
+display      | true         | Prevent box from render when set to `false`, since `3.1.0`
+layout       | 'horizontal' | The box can be rendered in `horizontal` or `vertical` mode, where the title and description is rendered above the field, since `3.1.0`
 priority     | 'default'    | The same value as for priority in `add_meta_box`
 sort_order   | 1000         | Numeric value, lowest value in the meta box will be at the top and the highest value at the bottom
 title        | empty string | The title of the meta box. This can't be empty. When passing a string as the first argument for box method it will become `array('title' => 'the title')` automatic
