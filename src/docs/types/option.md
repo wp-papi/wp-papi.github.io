@@ -54,6 +54,18 @@ Option type is used to create option pages with Papi. Option types will not be s
 
 - Does not save the option type id in the database since options don't have a post id. So you can't have different option types that has the same property slug.
 
+### Meta method
+
+The `meta` is a required method of the option type class. It should return an array containing the required keys.
+
+Options             | Required | Description
+--------------------|----------|------------
+capability          | no       | The capability that are allowed to access the page. Default is `manage_options`
+menu                | yes      | The menu to register the sub menu page on
+name                | yes      | The name of the option type
+show_screen_options | no       | Show screen options tabs. Default is `true`, since `3.1.0`
+show_help_tabs      | no       | Show help tabs. Default is `true`, since `3.1.0`
+
 ### Help method
 
 ```php
@@ -89,18 +101,6 @@ public function help_sidebar() {
 ```
 
 Add custom html to help sidebar, since `3.1.0`
-
-### Meta method
-
-The `meta` is a required method of the option type class. It should return an array containing the required keys.
-
-Options             | Required | Description
---------------------|----------|------------
-capability          | no       | The capability that are allowed to access the page. Default is `manage_options`
-menu                | yes      | The menu to register the sub menu page on
-name                | yes      | The name of the option type
-show_screen_options | no       | Show screen options tabs. Default is `true`, since `3.1.0`
-show_help_tabs      | no       | Show help tabs. Default is `true`, since `3.1.0`
 
 ## Menu
 

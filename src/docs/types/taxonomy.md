@@ -113,7 +113,7 @@ The method will take a `$taxonomy` argument. This is useful when the taxonomy ty
 
 Returning anything else then true will hide the taxonomy type.
 
-Default value is `true`.
+Default value is `true`
 
 ### Help method
 
@@ -132,7 +132,7 @@ public function help() {
 }
 ```
 
-Add custom help tabs, array of key/value where the key is the title and the value is the content, since `3.1.0`.
+Add custom help tabs, array of key/value where the key is the title and the value is the content, since `3.1.0`
 
 ### Help sidebar method
 

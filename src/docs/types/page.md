@@ -136,7 +136,7 @@ The method will take a `$post_type` argument. This is useful when the page type 
 
 Returning anything else then true will hide the page type.
 
-Default value is `true`.
+Default value is `true`
 
 ### Help method
 
@@ -155,7 +155,7 @@ public function help() {
 }
 ```
 
-Add custom help tabs, array of key/value where the key is the title and the value is the content, since `3.1.0`.
+Add custom help tabs, array of key/value where the key is the title and the value is the content, since `3.1.0`
 
 ### Help sidebar method
 
