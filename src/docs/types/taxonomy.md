@@ -64,3 +64,104 @@ show_screen_options   | no       | Show screen options tabs. Default is `true`
 show_help_tabs        | no       | Show help tabs. Default is `true`, since `3.1.0`
 sort_order            | no       | The sort order number of the taxonomy type
 template              | no       | The template file to render. This can be both dot templates `taxonomies.open` or `taxonomies/open.php`. Extension is not required.
+
+### Body classes method
+
+```php
+<?php
+
+/**
+ * Example of `body_classes` method.
+ *
+ * @return array
+ */
+public function body_classes() {
+  return ['custom-class'];
+}
+```
+
+With this method you can add custom body classes to body when a taxonomy type is rendered in the WordPress admin.
+
+### Box method
+
+This method is used to register all properties, tabs and remove meta boxes as described above.
+
+The box method can has callable method as the second argument that returns a array with properties or tabs.
+
+Read more about that under [box section](/docs/box.html).
+
+### Display method
+
+```php
+<?php
+
+/**
+ * Example of `display` method.
+ *
+ * @param  string $taxonomy
+ *
+ * @return bool
+ */
+public function display( $taxonomy ) {
+  return $taxonomy === 'category';
+}
+```
+
+This method is use to tell if the taxonomy type should be display (listed in the dropdown) or not.
+
+The method will take a `$taxonomy` argument. This is useful when the taxonomy type is register one more then one taxonomy.
+
+Returning anything else then true will hide the taxonomy type.
+
+Default value is `true`.
+
+### Help method
+
+```php
+<?php
+
+/**
+ * Example of `help` method.
+ *
+ * @return array
+ */
+public function help() {
+  return [
+    'Custom title' => 'Custom help text'
+  ];
+}
+```
+
+Add custom help tabs, array of key/value where the key is the title and the value is the content, since `3.1.0`.
+
+### Help sidebar method
+
+```php
+<?php
+
+/**
+ * Example of `help_sidebar` method.
+ *
+ * @return string
+ */
+public function help_sidebar() {
+  return '<p>Hello, world</p>';
+}
+```
+
+Add custom html to help sidebar, since `3.1.0`
+
+## Namespaces
+
+```php
+<?php
+
+namespace Foo\Bar;
+
+/**
+ * Example of a taxonomy type with namespace.
+ */
+class Test_Taxonomy_Type extends \Papi_Taxonomy_Type {}
+```
+
+Papi has no problem to work with taxonomy types that have namespaces.
