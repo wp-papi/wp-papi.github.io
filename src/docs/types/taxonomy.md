@@ -49,6 +49,8 @@ class Open_Taxonomy_Type extends Papi_Taxonomy_Type {
 }
 ```
 
+Taxonomy type exists since `3.1.0`
+
 ### Meta method
 
 The `meta` is a required method of the taxonomy type class. It should return an array containing the required keys.
