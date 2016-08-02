@@ -74,4 +74,5 @@ With this property you can add reference to a user.
 Key           | Default       | Description
 --------------|---------------|--------------------------------------------------
 capabilities  | []            | Specify capabilites or "current user can", if false all capabilities will be used.
+placeholder   | empty string  | Placeholder text that's displayed when no option is selected.
 select2       | true          | If true Select2 will be used, if false the native browser dropdown will be used.
