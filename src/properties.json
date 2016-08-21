@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Table",
+    "keywords": "table",
+    "requires": "3 or higher",
+    "text": "A property that renders a table with given keys and fields. It may not look great within all properties.",
+    "author": {
+      "link": "https://frozzare.com",
+      "text": "Fredrik Forsmo"
+    },
+    "repo": "https://github.com/frozzare/papi-property-table"
+  },
+  {
+    "title": "majs"
+  }
+]
