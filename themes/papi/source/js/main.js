@@ -103,7 +103,7 @@ if (communityProperties) {
         html += '<h4>' + data.title + '</h4>';
         html += '<span class="requires">' + data.requires + '</span>';
         html += '<p>' + data.text + '</p>';
-        html += '<a href="' + data.repo + '" target="_blank">Link to repository</a> - ';
+        html += '<a href="' + data.repo + '" target="_blank">Link to repository</a> - By ';
         html += '<a href="' + data.author.link + '" target="_blank">' + data.author.text + '</a>';
       html += '</li>';
     }
