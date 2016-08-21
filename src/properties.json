@@ -2,7 +2,7 @@
   {
     "title": "Example",
     "keywords": "words with spaces between",
-    "requires": "3 or higher",
+    "requires": "3.x",
     "text": "Property description",
     "author": {
       "link": "https://example.com",
@@ -14,7 +14,7 @@
   {
     "title": "Table",
     "keywords": "table",
-    "requires": "3 or higher",
+    "requires": "3.x",
     "text": "A property that renders a table with given keys and fields. It may not look great within all properties.",
     "author": {
       "link": "https://frozzare.com",
