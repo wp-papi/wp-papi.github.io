@@ -14,8 +14,8 @@ type: community
   <ul></ul>
 
   <h3>How to add a property to the list?</h3>
-  <p class="no-margin">1. Fork the <a href="https://github.com/wp-papi/wp-papi.github.io/blob/source/src/community/properties.md">repository</a></p>
-  <p class="no-margin">2. Add your property to `src/properties.json`</p>
-  <p class="no-margin">3. Submit your pull request to our repository.</p>
+  <p class="no-margin">1. Fork the <a href="ttps://github.com/wp-papi/wp-papi.github.io">repository</a></p>
+  <p class="no-margin">2. Add your property to <a href="https://github.com/wp-papi/wp-papi.github.io/blob/source/src/properties.json">properties.json</a></p>
+  <p class="no-margin">3. Submit your pull request to the `source` branch.</p>
   <p class="no-margin">4. Done!</p>
 </div>
