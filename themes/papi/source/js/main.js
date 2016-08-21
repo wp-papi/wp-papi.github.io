@@ -95,7 +95,7 @@ if (communityProperties) {
       data.repo = data.repo || '#';
       data.author = data.author || {text: 'Unkown author',link: '#'};
 
-      if (data.title === '' || data.text === '') {
+      if (data.title === '' || data.text === '' || data.text.toLowerCase() === 'example') {
         continue;
       }
 

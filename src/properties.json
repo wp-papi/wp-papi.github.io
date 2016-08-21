@@ -1,5 +1,16 @@
 [
   {
+    "title": "Example",
+    "keywords": "words with spaces between",
+    "requires": "3 or higher",
+    "text": "Property description",
+    "author": {
+      "link": "https://example.com",
+      "text": "Author name"
+    },
+    "repo": "https://github.com/author/papi-property-example"
+  },
+  {
     "title": "Table",
     "keywords": "table",
     "requires": "3 or higher",
@@ -9,8 +20,5 @@
       "text": "Fredrik Forsmo"
     },
     "repo": "https://github.com/frozzare/papi-property-table"
-  },
-  {
-    "title": "majs"
   }
 ]
