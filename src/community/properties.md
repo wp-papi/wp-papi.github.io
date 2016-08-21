@@ -34,7 +34,7 @@ type: community
       <h4>Table property</h4>
       <span class="requires">3 or higher</span>
       <p>A property that renders a table with given keys and fields. It may not look great within all properties.</p>
-      <a href="https://github.com/frozzare/papi-property-table">Link to repository</a> - By <a href="https://frozzare.com">Fredrik Forsmo</a>
+      <a href="https://github.com/frozzare/papi-property-table" target="_blank">Link to repository</a> - By <a href="https://frozzare.com" target="_blank">Fredrik Forsmo</a>
     </li>
   </ul>
 
