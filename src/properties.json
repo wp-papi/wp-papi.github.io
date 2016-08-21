@@ -3,7 +3,7 @@
     "title": "Example",
     "keywords": "words with spaces between",
     "requires": "3.x",
-    "text": "Property description",
+    "text": "This is a example object with all information that you can add about a property.",
     "author": {
       "link": "https://example.com",
       "text": "Author name"
