@@ -29,8 +29,15 @@ type: community
     Don't forget to unit test your property and please try adding them in alphabetical order!
 
     -->
+
+    <li data-keywords="table">
+      <h4>Table property</h4>
+      <span class="requires">3 or higher</span>
+      <p>A property that renders a table with given keys and fields. It may not look great within all properties.</p>
+      <a href="https://github.com/frozzare/papi-property-table">Link to repository</a> - By <a href="https://frozzare.com">Fredrik Forsmo</a>
+    </li>
   </ul>
-  <p>No properties exists, yet!</p>
+
   <h3>How to add a property to the list?</h3>
   <p class="no-margin">1. Fork the <a href="https://github.com/wp-papi/wp-papi.github.io/blob/source/src/community/properties.md">repository</a>.</p>
   <p class="no-margin">2. Add your property, html template and documentation exists in the source code of the page.</p>
