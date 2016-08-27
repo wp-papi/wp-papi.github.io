@@ -1,6 +1,6 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "papi-site",
+  "version": "1.0.0",
   "private": true,
   "hexo": {
     "version": "3.2.0"
@@ -20,7 +20,10 @@
     "hexo-deployer-git": "0.0.4"
   },
   "scripts": {
-    "apigen": "rm -rf ./tmp/papi && git clone git@github.com:wp-papi/papi.git ./tmp/papi && cd ./tmp/papi && git checkout 3.x && apigen generate --groups=none -s ./src -d ../../public/apigen",
-    "deploy": "rm -rf .deploy_git public && hexo generate && npm run apigen && cp -R static/* public/ && cp LICENSE public/ && mv public/apigen/ public/docs/ && hexo deploy"
+    "apigen": "rm -rf ./tmp/papi && git clone git@github.com:wp-papi/papi.git ./tmp/papi && cd ./tmp/papi && git checkout 3.x && apigen generate --groups=none -s ./src -d ../../public/apigen --tree --deprecated --template-config ../../tmp/apigen/src/config.neon",
+    "apigen-theme": "rm -rf ./tmp/apigen && git clone git@github.com:wp-papi/apigen-theme.git ./tmp/apigen && cd ./tmp/apigen && composer install && cd ../..",
+    "cleanup": "rm -rf public/2016 public/archives",
+    "deploy": "rm -rf .deploy_git public && hexo generate && npm run apigen-theme && npm run apigen && npm run static && npm run cleanup && hexo deploy",
+    "static": "cp -R static/* public/ && cp LICENSE public/ && mv public/apigen/ public/docs/"
   }
 }
