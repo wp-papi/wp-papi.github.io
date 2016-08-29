@@ -1,0 +1,28 @@
+blockquote {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    font-weight: 300;
+    margin: 25px 0;
+    padding: 25px;
+
+    footer:before {
+        display: none;
+    }
+
+    small {
+        &:before {
+            display: none;
+        }
+
+        color: #00AFC4;
+        font-weight: 300;
+    }
+
+    footer img, small img {
+        border-radius: 25px;
+        height: 50px;
+        margin-right: .5em;
+        vertical-align: middle;
+        width: 50px;
+    }
+}

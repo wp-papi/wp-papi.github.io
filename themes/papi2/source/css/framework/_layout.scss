@@ -1,3 +1,11 @@
 .container {
   @include outer-container;
 }
+
+.column-six {
+  @include span-columns(6);
+}
+
+body > section {
+  padding: 60px 0;
+}
