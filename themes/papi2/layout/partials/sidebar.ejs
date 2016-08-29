@@ -1,0 +1,38 @@
+<% type = type === 'properties' || type === 'types' ? 'docs' : type %>
+
+<section class="sidebar">
+    <div class="list">
+        <h2>
+            <%- type.charAt(0).toUpperCase() + type.slice(1) %>
+            <% if (type === 'docs') { %>
+            <select class="version-select">
+                <option selected>3.x</option>
+                <option>2.x</option>
+                <option>1.x</option>
+            </select>
+            <% } %>
+        </h2>
+        <ul class="menu-root">
+          <% site.pages.find({type: type}).sort('title').each(function (p) { %>
+            <li>
+              <a href="/<%- p.path %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
+              <% if (p.child !== undefined) { %>
+                <ul>
+                  <% site.pages.find({type: p.child}).sort('title').each(function (c) { %>
+                    <li>
+                      <a href="/<%- c.path %>" class="sidebar-link<%- page.title === c.title ? ' current' : '' %><%- c.is_new ? ' new' : '' %>"><%- c.title %></a>
+                    </li>
+                  <% }) %>
+                </ul>
+              <% } %>
+            </li>
+          <% }) %>
+        </ul>
+        <% if (type === 'docs') { %>
+          <ul class="menu-root">
+            <li><a href="/docs/apigen/">API reference docs</a></li>
+            <li><a href="https://github.com/wp-papi/papi/releases">Changelog</a></li>
+          </ul>
+        <% } %>
+    </div>
+</section>

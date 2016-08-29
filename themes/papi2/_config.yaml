@@ -1,0 +1,9 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
