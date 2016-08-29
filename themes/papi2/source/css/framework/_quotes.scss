@@ -2,7 +2,7 @@ blockquote {
     border: 1px solid #e5e5e5;
     border-radius: 5px;
     font-weight: 300;
-    margin: 25px 0;
+    margin: 25px 0 5px;
     padding: 25px;
 
     @include media($mobile) {

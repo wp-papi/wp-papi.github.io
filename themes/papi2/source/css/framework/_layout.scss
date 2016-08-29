@@ -10,6 +10,10 @@
     padding: 10px 0;
     width: 100%;
   }
+
+  &:nth-child(3) {
+    @include omega();
+  }
 }
 
 body > section {
