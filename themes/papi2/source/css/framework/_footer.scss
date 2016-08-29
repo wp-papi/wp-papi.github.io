@@ -1,0 +1,26 @@
+body > footer {
+  background: #f7f7f7;
+  border-top: 1px solid #e1e5ea;
+  min-height: 150px;
+  padding: 50px 0;
+  text-align: center;
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 30px;
+  }
+
+  span {
+    font-size: 12px;
+    text-align: center;
+
+    a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+  }
+}

@@ -9,4 +9,15 @@ body {
   background: #fff;
 }
 
-@import "framework/header.scss"
+a {
+  color: #00AFC4;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@import "framework/layout.scss";
+@import "framework/header.scss";
+@import "framework/footer.scss";

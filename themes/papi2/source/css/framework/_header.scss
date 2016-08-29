@@ -1,16 +1,15 @@
 body > header {
   background: #333;
-  min-height: 450px;
-  position: fixed;
-  top: 0;
   left: 0;
+  min-height: 450px;
+  padding-top: 1px;
   right: 0;
+  top: 0;
 
   .navbar {
     font-size: 14px;
     margin-left: -30px;
     min-height: 50px;
-    position: relative;
 
     ul li {
       float: left;
