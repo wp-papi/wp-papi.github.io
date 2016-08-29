@@ -2,8 +2,7 @@
 @import "../../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "../../../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
 
-$large-screen: em(860) !default;
-$medium-screen: em(640) !default;
+$mobile: new-breakpoint(max-width 500px 4);
 
 body {
   background: #fff;
@@ -24,4 +23,5 @@ a {
 
 @import "framework/layout.scss";
 @import "framework/header.scss";
+@import "framework/quotes.scss";
 @import "framework/footer.scss";
