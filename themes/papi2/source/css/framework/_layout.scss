@@ -4,8 +4,18 @@
 
 .column-six {
   @include span-columns(6);
+
+  @include media($mobile) {
+    max-width: 100%;
+    padding: 10px 0;
+    width: 100%;
+  }
 }
 
 body > section {
   padding: 60px 0;
+
+  @include media($mobile) {
+    padding: 60px 10px;
+  }
 }
