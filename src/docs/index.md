@@ -10,7 +10,7 @@ This is documentation for Papi 3
 #### Requirements
 
 - WordPress >= 4.0
-- PHP >= 5.5.9
+- PHP ^5.5.9 or ^7.0
 
 #### Installation
 
