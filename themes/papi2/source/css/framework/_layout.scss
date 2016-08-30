@@ -2,6 +2,10 @@
   @include outer-container;
 }
 
+.center {
+  text-align: center;
+}
+
 .column-six {
   @include span-columns(6);
 
