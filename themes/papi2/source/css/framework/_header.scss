@@ -8,13 +8,17 @@ body > header {
   .navbar {
     font-size: 14px;
 
-    ul li {
-      float: left;
-      list-style: none;
-      margin-right: 30px;
+    ul {
+      margin-left: -30px;
 
-      a {
-        color: #fff;
+      li {
+        float: left;
+        list-style: none;
+        margin-right: 30px;
+
+        a {
+          color: #fff;
+        }
       }
     }
   }
