@@ -1,0 +1,51 @@
+article {
+  @include clearfix;
+  text-align: left;
+
+  h2 {
+    font-weight: 300;
+  }
+
+  pre {
+  }
+
+  p code {
+    background: #F7F7F7;
+    border-radius: 3px * 1.5;
+    border: 1px solid #E0E0E0;
+    font-family: monaco;
+    font-size: 0.7em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap;
+  }
+
+  p.date {
+    color: transparentize(#333, 0.6);
+    font-size: 0.9em;
+    margin-bottom: 0.3em;
+  }
+
+  &.hr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .gallery {
+    @include outer-container;
+    padding: 2em 0;
+
+    .item {
+
+      @include span-columns(6);
+
+      h3 {
+        padding: 1em 0;
+      }
+    }
+  }
+}

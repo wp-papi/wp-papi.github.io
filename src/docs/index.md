@@ -17,7 +17,7 @@ This is documentation for Papi 3
 If you're using Composer to manage WordPress, add Papi to your project's dependencies. Run:
 
 ```
-$ composer require wp-papi/papi
+composer require wp-papi/papi
 ```
 
 Or manually add it to your `composer.json`:

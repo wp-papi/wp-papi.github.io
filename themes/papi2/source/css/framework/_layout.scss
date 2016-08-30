@@ -32,6 +32,36 @@
   }
 }
 
+.sidebar {
+  @include span-columns(3);
+
+  @include media($mobile) {
+    max-width: 100%;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .version-select {
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  + article {
+    @include span-columns(9);
+    @include omega();
+
+    @include media($mobile) {
+      max-width: 100%;
+      padding: 10px 0;
+      width: 100%;
+    }
+  }
+}
+
 body > section {
   padding: 60px 0;
 

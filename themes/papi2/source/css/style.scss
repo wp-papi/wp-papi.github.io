@@ -21,8 +21,17 @@ a {
   }
 }
 
+.guide-links {
+  margin: 2em 0;
+}
+
 @import "framework/layout.scss";
 @import "framework/header.scss";
+@import "framework/highlight.scss";
 @import "framework/form.scss";
+@import "framework/table.scss";
 @import "framework/quotes.scss";
 @import "framework/footer.scss";
+
+@import "partials/article.scss";
+@import "partials/community.scss";
