@@ -69,8 +69,8 @@ Key          | Default       | Description
 items        | array         | Array of items that should be listed in the relationship. You can use this to have your own data in the relationship property. Each item in the array is required to have `id` and `title` values. All sort options that begins with `Post` will be hidden.
 limit        | -1 (no limit) | Prevent how many post references that can be added.
 only_once    | false         | When this is true you can only select a relationship once.
-post_type    | 'page'        | Change which post types it loads post objects from
-query        | array         | Append a `WP_Query` on all post types. Gist reference over `WP_Query`. Note that `post_type` in query will always be removed
+post_type    | 'page'        | Change which post types it loads post objects from.
+query        | array         | Append a `WP_Query` on all post types. Gist reference over `WP_Query`. Note that `post_type` in query will always be removed.
 show_sort_by | true          | Show the sort by dropdown or not.
 
 ### Items data
