@@ -32,6 +32,19 @@
   }
 }
 
+.column-six-m-b {
+  margin-bottom: 2.35765%;
+
+  &:nth-last-of-type(-n+2) {
+    margin-bottom: 0;
+  }
+  @include media($mobile) {
+    &:nth-last-of-type(2) {
+      margin-bottom: 2.35765%;
+    }
+  }
+}
+
 .sidebar {
   @include span-columns(3);
 
@@ -63,7 +76,7 @@
 }
 
 body > section {
-  padding: 60px 0;
+  padding: 40px 0;
 
   @include media($mobile) {
     padding: 60px 10px;
