@@ -10,14 +10,14 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 
   &:before {
-    color: #dadada;
+    color: #eaeaea;
     content: open-quote;
-    font-family: 'Dosis', sans-serif;
-    font-size: 90px;
+    font-family: 'Rozha One', serif;
+    font-size: 70px;
     line-height: 0.1em;
     position: absolute;
-    left: -8px;
-    top: 62px;
+    left: -10px;
+    top: 50px;
   }
 
   &:after {
@@ -28,6 +28,10 @@ blockquote {
 
   @include media($mobile) {
     margin: 0;
+  }
+
+  p:first-of-type {
+    margin-top: 0;
   }
 
   footer:before {
