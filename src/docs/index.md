@@ -3,10 +3,6 @@ title: Getting Started
 type: docs
 ---
 
-This is documentation for Papi 3
-
-[Go to documentation for Papi 2](/docs-2.x/)
-
 #### Requirements
 
 - WordPress >= 4.0

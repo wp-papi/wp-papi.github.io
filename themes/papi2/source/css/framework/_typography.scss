@@ -5,9 +5,25 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 700;
   margin: 0 0 10px 0;
+}
+
+h1 {
+  font: 60px/68px 'Dosis', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: 26px/28px 'Dosis', Arial, sans-serif;
+}
+
+h3 {
+  font: 18px/22px 'Dosis', Arial, sans-serif;
+}
+
+body.home h2,
+body.home h3 {
+  text-transform: uppercase;
 }
 
 p {

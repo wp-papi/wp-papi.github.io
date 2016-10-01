@@ -4,7 +4,7 @@
       <%- partial('partials/sidebar', { type: page.type, index: page.index }) %>
     <% } %>
     <article>
-      <h1><%- page.main ? page.main : page.title %><%- page.type === 'properties' ? ' property' : '' %></h1>
+      <h2><%- page.main ? page.main : page.title %><%- page.type === 'properties' ? ' property' : '' %></h2>
       <%- page.content %>
       <% if (page.type === 'properties' || page.type === 'docs') { %>
       <div class="footer">
