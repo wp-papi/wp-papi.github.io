@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Community
 type: community
 ---
 

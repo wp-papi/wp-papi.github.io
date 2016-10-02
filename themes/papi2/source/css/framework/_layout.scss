@@ -81,7 +81,9 @@ body > section {
   @include media($mobile) {
     padding: 60px 10px;
   }
+}
 
+body.home > section {
   &:nth-child(even) {
     background: #f8f9fa;
   }
