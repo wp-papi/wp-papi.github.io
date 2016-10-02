@@ -3,7 +3,7 @@
 <aside class="sidebar">
     <div class="list">
         <h2>
-            <%- type.charAt(0).toUpperCase() + type.slice(1) %>
+            <%- type === 'docs' ? 'Documentation' : type.charAt(0).toUpperCase() + type.slice(1) %>
             <% if (type === 'docs') { %>
             <select class="version-select">
                 <option selected>3.x</option>
