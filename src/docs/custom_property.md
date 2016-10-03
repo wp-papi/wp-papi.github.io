@@ -27,22 +27,19 @@ class Papi_Property_Image_Video extends Papi_Property {}
 
 Example bootstrap and property class:
 
-The html method is the important one, with out that there aren't going to be any property output in WordPress admin.
+The html method is the important one, without that there aren't going to be any property output in WordPress admin.
 
 Read more about the `Papi_Property` in the [class documentation](apigen/class-Papi_Property.html).
 
 ```php
 <?php
 
-// bootstrap.php
-add_action( 'papi/include', function () {
-  require_once 'class-papi-property-stringx.php';
+// bootstrap.php, only required in a plugin, load class direct in theme.
+add_action( 'papi/init', function () {
+  require_once __DIR__ . '/class-papi-property-stringx.php';
 } );
 
 // class-papi-property-stringx.php
-
-// Exit if accessed directly
-defined( 'ABSPATH' ) || exit;
 
 /**
  * Papi - Custom string property

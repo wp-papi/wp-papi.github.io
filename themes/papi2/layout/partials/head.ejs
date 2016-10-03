@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <%
+  var title = page.main ? page.main : page.title;
+
+  if (is_archive()){
+    title = 'Archives';
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = 'Category: ' + page.category;
+  } else if (is_tag()){
+    title = 'Tag: ' + page.tag;
+  }
+
+  var og_title = title ? title + ' | ' : '';
+  %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%- open_graph({title: og_title + config.title, twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#181f27">
+  <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com/">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:700|Roboto:300,400|Rozha+One" rel="stylesheet">
+  <%- css('css/style') %>
+  <%- partial('google-analytics') %>
+</head>

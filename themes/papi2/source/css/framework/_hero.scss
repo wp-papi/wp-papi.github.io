@@ -1,0 +1,39 @@
+.hero {
+  background: #333;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+  .inner {
+    @include outer-container;
+
+    .hero-img {
+      margin: 15px auto -20px;
+      max-width: 200px;
+      width: 100%;
+    }
+
+    .hero-text {
+      color: #fff;
+      font-weight: 300;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 0 10px;
+      text-align: center;
+      width: 100%;
+
+      h1 {
+        margin-top: -10px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+body.home .hero {
+  padding-top: 10px;
+}
+

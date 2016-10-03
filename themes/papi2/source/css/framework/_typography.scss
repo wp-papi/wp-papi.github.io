@@ -1,0 +1,31 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px 0;
+}
+
+h1 {
+  font: 40px/48px 'Dosis', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: 26px/28px 'Dosis', Arial, sans-serif;
+}
+
+h3 {
+  font: 18px/22px 'Dosis', Arial, sans-serif;
+}
+
+body.home h2,
+body.home h3 {
+  text-transform: uppercase;
+}
+
+p {
+  margin: 10px 0 15px 0;
+}

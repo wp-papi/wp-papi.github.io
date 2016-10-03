@@ -1,0 +1,55 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  padding: 0;
+  background: #23282d;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  z-index: 500;
+  overflow: visible;
+  text-align: center;
+  transition: all .25s ease;
+
+  .navbar {
+    position: relative;
+    display: inline-block;
+    font-size: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline-block;
+      position: relative;
+      height: 56px;
+      line-height: 56px;
+      padding: 0 20px;
+      min-width: 50px;
+      border: none;
+      text-align: center;
+      background-color: hsla(0,0%,100%,0);
+      text-decoration: none;
+      font-size: 16px;
+
+      a {
+        color: #eee;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include media($mobile) {
+  .github-corner {
+    display: none;
+  }
+}
