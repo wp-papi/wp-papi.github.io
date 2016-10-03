@@ -1,17 +1,3 @@
-function getJSON(url, callback) {
-  var request = new XMLHttpRequest();
-  request.open('GET', url, true);
-
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-      var data = JSON.parse(request.responseText);
-      callback(data);
-    }
-  };
-
-  request.send();
-}
-
 // Redirect to the old documentation when selecting a old version.
 if (document.querySelector('.version-select')) {
   document.querySelector('.version-select').addEventListener('change', function(e) {
@@ -53,69 +39,4 @@ if (sidebarMenu) {
       childs[i].className += ' hide';
     }
   }
-}
-
-// Community properties search
-var communityProperties = document.querySelector('.community-properties');
-
-if (communityProperties) {
-  getJSON('/properties.json', function(list) {
-    var html = '';
-
-    list.sort(function(a, b) {
-      var textA = a.title.toUpperCase();
-      var textB = b.title.toUpperCase();
-
-      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-    });
-
-    for (var i = 0, l = list.length; i < l; i++) {
-      var data = list[i];
-
-      data.title = data.title || '';
-      data.keywords = data.keywords || '';
-      data.requires = data.requires || '';
-      data.text = data.text || '';
-      data.repo = data.repo || '#';
-      data.author = data.author || {text: 'Unkown author',link: '#'};
-
-      if (data.title === '' || data.text === '' || data.title.toLowerCase() === 'example') {
-        continue;
-      }
-
-      html += '<li data-keywords="' + data.keywords + '">';
-        html += '<h4>' + data.title + '</h4>';
-        html += '<span class="requires">' + data.requires + '</span>';
-        html += '<p>' + data.text + '</p>';
-        html += '<a href="' + data.repo + '" target="_blank">Link to repository</a> - By ';
-        html += '<a href="' + data.author.link + '" target="_blank">' + data.author.text + '</a>';
-      html += '</li>';
-    }
-
-    communityProperties.querySelectorAll('ul')[0].innerHTML = html;
-  });
-
-  var search = communityProperties.querySelector('#search');
-
-  search.addEventListener('keyup', function(e) {
-    e.preventDefault();
-
-    var value = this.value.toLowerCase();
-    var list = this.parentElement.querySelectorAll('ul li');
-
-    for(var i = 0, l = list.length; i < l; i++) {
-      var keywords = list[i].getAttribute('data-keywords');
-      keywords = keywords === null ? '' : keywords;
-      var title = list[i].querySelector('h4');
-      title = typeof title === 'undefined' ? '' : title.innerText;
-
-      if (title.toLowerCase().indexOf(value) !== -1 || keywords.toLowerCase().indexOf(value) !== -1) {
-        list[i].className = '';
-      } else if (list[i].className.indexOf('hide') === -1) {
-        list[i].className += ' hide';
-      } else if (value === '' && list[i].className.indexOf('hide') !== -1) {
-        list[i].className = '';
-      }
-    }
-  });
 }

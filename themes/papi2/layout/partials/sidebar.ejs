@@ -15,12 +15,12 @@
         <ul class="menu-root">
           <% site.pages.find({type: type}).sort('title').each(function (p) { %>
             <li>
-              <a href="/<%- p.path %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
+              <a href="<%- p.link ? p.link : '/' + p.path %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
               <% if (p.child !== undefined) { %>
                 <ul>
                   <% site.pages.find({type: p.child}).sort('title').each(function (c) { %>
                     <li>
-                      <a href="/<%- c.path %>" class="sidebar-link<%- page.title === c.title ? ' current' : '' %><%- c.is_new ? ' new' : '' %>"><%- c.title %></a>
+                      <a href="<%- c.link ? c.link : '/' + c.path %>" class="sidebar-link<%- page.title === c.title ? ' current' : '' %><%- c.is_new ? ' new' : '' %>"><%- c.title %></a>
                     </li>
                   <% }) %>
                 </ul>
