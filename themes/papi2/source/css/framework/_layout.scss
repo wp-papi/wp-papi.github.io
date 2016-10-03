@@ -76,6 +76,7 @@
 }
 
 body > section {
+  background: #fff;
   padding: 40px 0;
 
   @include media($mobile) {
