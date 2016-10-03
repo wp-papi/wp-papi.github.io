@@ -18,11 +18,6 @@ papi_property( [
     'page_type' => 'start-page-type'
   ]
 ] )
-
-/**
- * Example output.
- * The reference property does not save any values.
- */
 ```
 
 ### Description
