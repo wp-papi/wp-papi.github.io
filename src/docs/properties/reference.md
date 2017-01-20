@@ -23,7 +23,7 @@ papi_property( [
 ### Description
 
 When using Post or Relationship property to load modules or something like that.
-You may what to check which pages are loading the module. This is where the reference property comes in hand,
+You may want to check which pages are loading the module. This is where the reference property comes in hand,
 it will show which pages that has a reference to the module.
 
 ![Reference example](/images/docs/property-reference.png)
