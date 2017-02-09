@@ -13,7 +13,12 @@ type: properties
 papi_property( [
   'title' => 'Number',
   'slug'  => 'my_number_slug',
-  'type'  => 'number'
+  'type'  => 'number',
+  'settings' => [
+    'step' => 1,
+    'min' => 0,
+    'max' => 200,
+  ]
 ] )
 
 /**
@@ -29,4 +34,8 @@ The number property is the HTML5 number input field. No custom validation exists
 
 ### Settings
 
-No settings exists.
+Key           | Default            | Description
+--------------|--------------------|-------------------------------------------------
+step          | "any" or int or float  | Limit the increments at which a numeric value can be set
+min           | int or float       | Minimum value
+max           | int or float      | Maximum value
