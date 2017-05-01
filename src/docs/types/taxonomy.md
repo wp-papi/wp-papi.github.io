@@ -110,11 +110,11 @@ public function display( $taxonomy ) {
 }
 ```
 
-This method is use to tell if the taxonomy type should be display (listed in the dropdown) or not.
+This method is used to tell if the taxonomy type should be displayed (listed in the dropdown) or not.
 
-The method will take a `$taxonomy` argument. This is useful when the taxonomy type is register one more then one taxonomy.
+The method will take a `$taxonomy` argument. This is useful when the taxonomy type is registered on more than one taxonomy.
 
-Returning anything else then true will hide the taxonomy type.
+Returning anything other than `true` will hide the taxonomy type.
 
 Default value is `true`
 
