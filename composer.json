@@ -1,0 +1,7 @@
+{
+    "name": "frozzare/wp-papi.github.io",
+    "require": {},
+    "require-dev": {
+        "apigen/apigen": "^4.1"
+    }
+}

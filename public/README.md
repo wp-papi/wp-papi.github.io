@@ -1,7 +1,7 @@
 site
 ====
 
-Landing site and documentation (for 3.x) for Papi.
+Landning site and documentation (for 3.x) for Papi.
 
 Modifications should be made in `source` branch.
 
