@@ -37,7 +37,6 @@ With this property you can add a dropdown. The key is the value that the user wi
 
 Key           | Default            | Description
 --------------|--------------------|-------------------------------------------------
-edit_url      | true               | Display edit post link in property
 items         | array              | Array with options, value or key/value
 placeholder   | empty string       | Placeholder text that's displayed when no option is slected.
 selected      | empty string       | The select item that will be selected from start. The value should match a key of your items
