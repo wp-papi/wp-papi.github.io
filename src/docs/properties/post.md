@@ -57,6 +57,7 @@ With this property you can add reference to another post. It can't handle multip
 
 Key           | Default       | Description
 --------------|---------------|--------------------------------------------------
+edit_url      | true          | Display edit post link in property
 labels        | array         | Array of labels, `select_post_type` that defaults to `Select Post Type` and `select_item` that defaults to `Select %s` (the post type name).
 layout        | 'simple'      | Post property has two different layouts, the `simple` one that is one dropdown with option labels and `advanced` that is two dropdown, one with all post types. `Since 3.0.0`
 placeholder   | empty string  | Placeholder text that's displayed when no option is selected.
