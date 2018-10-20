@@ -58,7 +58,7 @@ array
 
 ### Description
 
-With this property you can link posts, pages or custom post types together. With the `post_type` setting you can diced witch post types to use, default is page.
+With this property you can link posts, pages or custom post types together. With the `post_type` setting you can decide which post types to use. Default is page.
 
 ![Relationship example](/images/docs/property-relationship.png)
 
