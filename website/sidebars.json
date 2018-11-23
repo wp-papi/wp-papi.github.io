@@ -1,0 +1,59 @@
+{
+  "docs": {
+    "Getting Started": [
+      "getting-started"
+    ],
+    "Core": [
+      "actions",
+      "api_field",
+      "api_page",
+      "api_taxonomy",
+      "box",
+      "conditional_logic",
+      "custom_property",
+      "papi_directory",
+      "properties",
+      "property_filters",
+      "setting_filters",
+      "types",
+      "upgrade_guide",
+      "wp-cli"
+    ],
+    "Properties": [
+      "properties/bool",
+      "properties/checkbox",
+      "properties/color",
+      "properties/datetime",
+      "properties/divider",
+      "properties/dropdown",
+      "properties/editor",
+      "properties/file",
+      "properties/flexible",
+      "properties/gallery",
+      "properties/group",
+      "properties/hidden",
+      "properties/html",
+      "properties/image",
+      "properties/link",
+      "properties/number",
+      "properties/post",
+      "properties/radio",
+      "properties/reference",
+      "properties/relationship",
+      "properties/repeater",
+      "properties/string",
+      "properties/term",
+      "properties/text",
+      "properties/text",
+      "properties/url",
+      "properties/user"
+    ],
+    "Types": [
+      "types/attachment",
+      "types/model",
+      "types/option",
+      "types/page",
+      "types/taxonomy"
+    ]
+  }
+}
