@@ -4,7 +4,7 @@ title: Getting Started
 
 #### Requirements
 
-- WordPress >= 4.0 or ClassicPress 1.0
+- [WordPress](https://wordpress.org/) >= 4.0 or [ClassicPress](https://www.classicpress.net/) 1.0
 - PHP ^5.6 or ^7.0
 
 #### Installation
